@@ -1,446 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zxx">
 
-<!-- Mirrored from digitachainx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2022 04:27:57 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<!-- Mirrored from avillioncapital.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 20:51:36 GMT -->
 <head>
-
-    <!-- metas -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="author" content="Affluent CoinFX" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords" content="blockchain, Forex, FX, Crypto, Cryptos, Cryptocurrencies, Stock, Stocks, Bonds, Invest, Investment, Equity" />
-    <meta name="description" content="Affluent CoinFX is an investment firm committed to exceptional returns for investors through actively managed portfolios of these blockchain assets." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- title  -->
-    <title>Affluent CoinFX | Blockchain Investment Company</title>
+    <!-- Links Of CSS File -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/remixicon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/aos.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/odometer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="asset/images/favicon_1647610748.png">
-    <link rel="apple-touch-icon" href="asset/images/favicon_1647610748.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="asset/images/favicon_1647610748.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="asset/images/favicon_1647610748.png">
-
-    <!-- plugins -->
-    <link rel="stylesheet" href="{{ asset('assets/miner/css/plugins.css') }}" />
-
-    <!-- revolution slider css -->
-    <link rel="stylesheet" href="{{ asset('assets/miner/css/rev_slider/settings.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/miner/css/rev_slider/layers.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/miner/css/rev_slider/navigation.css') }}">
-
-    <!-- search css -->
-    <link rel="stylesheet" href="{{ asset('assets/miner/search/search.css') }}" />
-
-    <!-- quform css -->
-    <link rel="stylesheet" href="{{ asset('assets/miner/quform/css/base.css') }}">
-
-    <!-- custom css -->
-    <link href="{{ asset('assets/miner/css/styles.css') }}" rel="stylesheet" id="colors">
-    <style>
-        #google_translate_element {
-
-            color: transparent;
-        }
-
-        #google_translate_element a {
-
-            display: none;
-        }
-
-        select.google_translate_element {
-
-            color: black;
-        }
-
-        div.goog-te-gadget {
-
-            color: transparent;
-        }
-
-        div.goog-te-gadget {
-
-            color: transparent !important;
-        }
-
-
-    </style>
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Title -->
+    <title>Assit Finance Group</title>
 </head>
 
 <body>
 
-<!-- start page loading -->
-<div id="preloader">
-    <div class="row loader">
-        <div class="loader-icon"></div>
+
+<!-- Start Navbar Area -->
+<div class="navbar-area">
+    <div class="mobile-responsive-nav">
+        <div class="container">
+            <div class="mobile-responsive-menu">
+                <div class="logo">
+                    <a href="{{ route('index') }}">
+                        <h3 style="font-weight: bolder; color: black">Avillion Capital</h3>
+{{--                        <img src="assets/images/logo.png" alt="logo">--}}
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!-- end page loading -->
+    <center><div id="google_translate_element"></div></center>
+    <div class="desktop-nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index-3.html">
+                    <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
+                </a>
 
-<!-- start main-wrapper section -->
-<div class="main-wrapper">
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-            {
-                "symbols": [
-                {
-                    "description": "Amazon",
-                    "proName": "NASDAQ:AMZN"
-                },
-                {
-                    "description": "Facebook",
-                    "proName": "NASDAQ:FB"
-                },
-                {
-                    "description": "Alphabet",
-                    "proName": "NASDAQ:GOOGL"
-                },
-                {
-                    "description": "Apple",
-                    "proName": "NASDAQ:AAPL"
-                },
-                {
-                    "description": "Mircosoft",
-                    "proName": "NASDAQ:MSFT"
-                },
-                {
-                    "description": "BTC/USD",
-                    "proName": "COINBASE:BTCUSD"
-                },
-                {
-                    "description": " \tAlibaba Group Holding",
-                    "proName": " \tNYSE:BABA"
-                },
-                {
-                    "description": " \tBerkshire Hathaway",
-                    "proName": " \tNYSE:BRK.B"
-                },
-                {
-                    "description": " \tJPMorgan Chase",
-                    "proName": " \tNYSE:JPM"
-                },
-                {
-                    "description": "ETH/USD",
-                    "proName": "KRAKEN:ETHUSD"
-                },
-                {
-                    "description": " \tJohnson & Johnson",
-                    "proName": " \tNYSE:JNJ"
-                },
-                {
-                    "description": " \tExxon Mobil",
-                    "proName": " \tNYSE:XOM"
-                },
-                {
-                    "description": " \tRoyal Dutch Shell",
-                    "proName": " \tNYSE:RDS.A"
-                },
-                {
-                    "description": " \tBank of America",
-                    "proName": " \tNYSE:BAC"
-                },
-                {
-                    "description": "XRP/USD",
-                    "proName": "BITFINEX:XRPUSD"
-                }
-            ],
-                "colorTheme": "dark",
-                "isTransparent": false,
-                "displayMode": "compact",
-                "locale": "en"
-            }
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
+                <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');}</script>
 
+                <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <div class="others-options ml-30">
 
-    <!-- start header section -->
-    <header class="header-style1 menu_area-light">
-        <div id="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-xs-12">
-                        <div class="top-bar-info">
-                            <ul>
-                                <li><i class="fas fa-envelope"></i>support@affluent-coinfx.com</li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="col-xs-12 col-md-3 xs-display-none">
-                        <ul class="top-social-icon">
 
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="index-2.html" class="nav-link  active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about-us.html" class="nav-link ">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="bitcoin-farm.html" class="nav-link">Crypto Trading</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="business-insurance.html" class="nav-link">Forex</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="health-insurance.html" class="nav-link">Loans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="life-insurance.html" class="nav-link">NFP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="car-insurance.html" class="nav-link">Hedge Funds</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                Pages
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="faq.html" class="nav-link">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing-plan.html" class="nav-link">Plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="others-options">
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <!--	<li>
+                                    <a href="tel:+(111)-65-458-856" class="call-us">
+                                        <i class="ri-phone-line"></i>
+                                        +(111) 65 458 856
+                                    </a>
+                                </li>   -->
+                            <li>
+                                <a href="login.html" class="default-btn">
+
+                                    Client Portal
+                                </a>
+                            </li>
+                            <li>
+                                <button class="menu-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                                    <i class="flaticon-right-menu-bars"></i>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<!-- End Navbar Area -->
+
+<!-- Start Offcanvas Area -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+    <div class="offcanvas-header">
+        <a href="index-3.html">
+            <h2>Assit Finance</h2>
+{{--            <img src="assets/images/logo.png" alt="Image">--}}
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="about-us off-mb-30">
+            <h3>About Us</h3>
+            <p>We make lives better by solving the financial challenges of our changing world.</p>
         </div>
 
-        <div class="navbar-default">
+        <div class="contact-info off-mb-30">
+            <h3>Contact Info</h3>
 
-            <!-- start top search -->
-            <div class="top-search bg-theme">
-                <div class="container">
-                    <form class="search-form" action="#" method="GET" accept-charset="utf-8">
-                        <div class="input-group">
-                        <span class="input-group-addon cursor-pointer">
-                            <button class="search-form_submit fas fa-search font-size18 text-white" type="submit"></button>
-                        </span>
-                            <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                            <span class="input-group-addon close-search"><i class="fas fa-times font-size18 line-height-28 margin-5px-top"></i></span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- end top search -->
+            <ul class="contact-list">
+                <li>
+                    <i class="ri-map-pin-line"></i>
+                    Fornäng 29
+                    589 73  LINKÖPING
+                </li>
 
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-12">
-                        <div class="menu_area alt-font">
-                            <nav class="navbar navbar-expand-lg navbar-light no-padding">
+                <li>
+                    <i class="ri-mail-line"></i>
+                    <a href="#">support@assitfinance.com</a>
+                </li>
 
-                                <div class="navbar-header navbar-header-custom">
-                                    <!-- start logo -->
-                                    <a href="{{ route('index') }}" class="navbar-brand logo2">
-                                        <h3 style="font-weight: bolder; color: #FD5240">Affluent CoinFX</h3>
-{{--                                        <img id="logo" src="asset/images/logo_1647610732.png" alt="logo">--}}
-                                    </a>
-                                    <!-- end logo -->
-                                    <div id="google_translate_element"></div>
-                                    <script>
-                                        function googleTranslateElementInit() {
-                                            new google.translate.TranslateElement({
-                                                pageLanguage: 'en'
-                                            }, 'google_translate_element');
-                                        }
-                                    </script>
-
-                                </div>
-
-                                <div class="navbar-toggler"></div>
-
-                                <!-- menu area -->
-                                <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
-                                    <li><a href="{{ route('index') }}">Home</a></li>
-
-                                    <li><a href="{{ route('pricing') }}">Pricing</a></li>
-
-                                    <li><a href="{{ route('about') }}">About Us</a></li>
-                                    <li><a href="{{ route('register') }}"><span class="btn-style2 small theme">JOIN NOW</span></a></li>
-                                </ul>
-                                <!-- end menu area -->
-
-                                <!-- start attribute navigation -->
-                                <div class="attr-nav sm-no-margin sm-margin-70px-right xs-margin-65px-right">
-                                    <span class="sm-margin-20px-right xs-margin-5px-right">
-                                        <a href="{{ route('login') }}" class="btn-style2 small theme">
-                                            <!-- <i class="fa fa-user-circle">Account</i> -->
-                                            <span>LOGIN</span>
-                                        </a>
-                                    </span>
-                                    <!-- <li class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></li> -->
-                                </div>
-                                <!-- end attribute navigation -->
-
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </ul>
         </div>
-
-    </header>
-    <!-- end header section -->
-
+    </div>
+</div>
+<!-- End Offcanvas Area -->
 
     @yield('content')
 
-    <!-- start footer section -->
-    <footer class="bg-img background-size-cover" data-overlay-dark="9" data-background="https://digitachainx.com/assets/miner/img/bg/footer-bga.jpg">
-        <div class="container">
-            <div class="row">
+<!-- Start Footer Area -->
+<div class="footer-area bg-color-f3f9f8 pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="single-footer-widget">
+                    <a href="{{ route('index') }}">
+                        <h3 style="font-weight: bolder; color: black">Avillion Capital</h3>
+                    </a>
 
-                <div class="col-lg-4 col-md-6 sm-margin-50px-bottom xs-margin-30px-bottom">
-                    <div class="padding-30px-right border-right xs-border-bottom xs-no-border-right  border-color-light-white xs-padding-30px-bottom xs-no-padding-right height-100">
-                        <h3 class="footer-title-style7 text-white">Contact Us</h3>
-                        <ul class="footer-list">
-                            <li>
-                                <span class="d-inline-block vertical-align-top font-size18"><i class="fas fa-map-marker-alt text-theme-color"></i></span>
-                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">47 Nungua Link Road 2nd Floor,
-                                Bigboss,England</span>
-                            </li>
+                    <ul class="contact-info">
+                        <li>
+                            <span>Location:</span>
+                            Fornäng 29
+                            589 73  LINKÖPING ,Sweden
+                        </li>
+                        <li>
+                            <span>Contact:</span>
+                            +46 7671 04969
+                        </li>
 
-                            <li>
-                                <span class="d-inline-block vertical-align-top font-size18"><i class="far fa-envelope text-theme-color"></i></span>
-                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">support@affluent-coinfx.com</span>
-                            </li>
+                        <li>
+                            <span>Email:</span>
+                            <a href="#">support@assitfinance.com</a>
+                        </li>
+                    </ul>
 
-                        </ul>
-                        <div class="footer-social-icons small margin-15px-top">
-                            <ul>
+                    <!-- <ul class="social-link">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
 
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3>Company</h3>
+
+                            <ul class="use-link">
+
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 sm-margin-50px-bottom xs-margin-30px-bottom">
-                    <div class="padding-30px-right sm-no-padding-right border-right xs-border-bottom sm-no-border-right border-color-light-white xs-padding-30px-bottom height-100">
-                        <h3 class="footer-title-style7 text-white">Newsletter</h3>
-                        <p class="margin-20px-bottom">You can subscribe to our free newsletter to stay updated with information anf offers from Affluent CoinFX</p>
-                        <form class="quform newsletter-form w-sm-90 mx-auto mx-lg-0" action="#" method="post" enctype="multipart/form-data" onclick="">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3>Explore</h3>
 
-                            <div class="quform-elements">
+                            <ul class="use-link">
+                                <li>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
 
-                                <div class="row">
-
-                                    <!-- Begin Text input element -->
-                                    <div class="col-md-12">
-                                        <div class="quform-element">
-                                            <div class="quform-input">
-                                                <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with Affluent CoinFX" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Text input element -->
-
-                                    <!-- Begin Submit button -->
-                                    <div class="col-md-12">
-                                        <div class="quform-submit-inner">
-                                            <button class="btn btn-white text-theme-color m-0" type="submit"><i class="fas fa-paper-plane"></i></button>
-                                        </div>
-                                        <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                    </div>
-                                    <!-- End Submit button -->
-
-                                </div>
-
-                            </div>
-
-                        </form>
+                                <li>
+                                    <a href="pricing-plan.html">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="height-100">
-                        <h3 class="footer-title-style7 text-white">About Us</h3>
-                        <p class="margin-20px-bottom">Affluent CoinFX is a company involved in a blockchain assets hedge fund.</p>
-                        <p class="margin-20px-bottom">The company invests in cryptocurrency protocols and companies.</p>
-                        <a href="{{ route('about') }}" class="butn theme white-hover small"><span>Read More</span></a>
+                    <div class="col-lg-4 col-sm-4">
+
                     </div>
                 </div>
             </div>
-
         </div>
-
-        <div class="footer-bar bg-transparent border-top border-color-light-white position-relative z-index-1">
-            <div class="container">
-                <p>&copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> Affluent CoinFX</p>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer section -->
-
+    </div>
 </div>
-<!-- end main-wrapper section -->
+<!-- End Footer Area -->
 
-<!-- start scroll to top -->
-<a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
-<!-- end scroll to top -->
+<!-- Start Copy Right Area -->
+<div class="copy-right-area bg-color-f3f9f8">
+    <div class="container">
+        <div class="copy-right-content">
+            <p>© {{ Date('Y') }} Assit Finance Limited</p>
+        </div>
+    </div>
+</div>
+<!-- End Copy Right Area -->
 
-<!-- all js include start -->
+<!-- Start Go Top Area -->
+<div class="go-top">
+    <i class="ri-arrow-up-s-fill"></i>
+    <i class="ri-arrow-up-s-fill"></i>
+</div>
+<!-- End Go Top Area -->
 
-<!-- jquery -->
-<script src="{{ asset('assets/miner/js/jquery.min.js') }}"></script>
+<!-- Links of JS File -->
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script src="assets/js/jquery.min.js"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ asset('assets/js/meanmenu.min.js') }}"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/carousel-thumbs.min.js') }}"></script>
+<script src="{{ asset('assets/js/aos.min.js') }}"></script>
+<script src="{{ asset('assets/js/appear.min.js') }}"></script>
+<script src="{{ asset('assets/js/odometer.min.js') }}"></script>
+<script src="{{ asset('assets/js/magnific-popup.min.js') }}"></script>
+<script src="{{ asset('assets/js/tween-max.min.js') }}"></script>
+<script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
+<script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+<script src="{{ asset('assets/js/ajaxchimp.min.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 
-<!-- popper js -->
-<script src="{{ asset('assets/miner/js/popper.min.js') }}"></script>
-
-<!-- bootstrap -->
-<script src="{{ asset('assets/miner/js/bootstrap.min.js') }}"></script>
-
-<!-- navigation -->
-<script src="{{ asset('assets/miner/js/nav-menu.js') }}"></script>
-
-<!-- serch -->
-<script src="{{ asset('assets/miner/search/search.js') }}"></script>
-
-<!-- tab -->
-<script src="{{ asset('assets/miner/js/easy.responsive.tabs.js') }}"></script>
-
-<!-- owl carousel -->
-<script src="{{ asset('assets/miner/js/owl.carousel.js') }}"></script>
-
-<!-- jquery.counterup.min -->
-<script src="{{ asset('assets/miner/js/jquery.counterup.min.js') }}"></script>
-
-<!-- stellar js -->
-<script src="{{ asset('assets/miner/js/jquery.stellar.min.js') }}"></script>
-
-<!-- waypoints js -->
-<script src="{{ asset('assets/miner/js/waypoints.min.js') }}"></script>
-
-<!-- countdown js -->
-<script src="{{ asset('assets/miner/js/countdown.js') }}"></script>
-
-<!-- jquery.magnific-popup js -->
-<script src="{{ asset('assets/miner/js/jquery.magnific-popup.min.js') }}"></script>
-
-<!-- isotope.pkgd.min js -->
-<script src="{{ asset('assets/miner/js/isotope.pkgd.min.js') }}"></script>
-
-<!--  chart js -->
-<script src="{{ asset('assets/miner/js/chart.min.js') }}"></script>
-
-<!-- thumbs js -->
-<script src="{{ asset('assets/miner/js/owl.carousel.thumbs.js') }}"></script>
-
-<!-- animated js -->
-<script src="{{ asset('assets/miner/js/animated-headline.js') }}"></script>
-
-<!--  clipboard js -->
-<script src="{{ asset('assets/miner/js/clipboard.min.js') }}"></script>
-
-<!--  prism js -->
-<script src="{{ asset('assets/miner/js/prism.js') }}"></script>
-
-<!-- revolution slider js files start -->
-<script src="{{ asset('assets/miner/js/rev_slider/jquery.themepunch.tools.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/jquery.themepunch.revolution.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.actions.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.carousel.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.kenburn.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.layeranimation.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.migration.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.navigation.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.parallax.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.slideanims.min.js') }}"></script>
-<script src="{{ asset('assets/miner/js/rev_slider/extensions/revolution.extension.video.min.js') }}"></script>
-
-<!-- custom scripts -->
-<script src="{{ asset('assets/miner/js/main.js') }}"></script>
-
-<!-- quform plugins js -->
-<script src="{{ asset('assets/miner/quform/js/plugins.js') }}"></script>
-
-<!-- quform scripts js -->
-<script src="{{ asset('assets/miner/quform/js/scripts.js') }}"></script>
-
-<!-- all js include end -->
-
-<script src="//code.jivosite.com/widget/TzMcqSGn8K" async></script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<!-- GetButton.io widget -->
+<script type="text/javascript">(function(){var options={whatsapp:"+46767104969",call_to_action:"Message us",button_color:"#FF6550",position:"left",};var proto='index.html',host="getbutton.io",url=proto+'//static.'+host;var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url+'/widget-send-button/js/init.js';s.onload=function(){WhWidgetSendButton.init(host,proto,options);};var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);})();</script>
+<!-- /GetButton.io widget -->
 
 </body>
 
-<!-- Mirrored from digitachainx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2022 04:29:33 GMT -->
+
+<!-- Mirrored from avillioncapital.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 May 2023 20:52:50 GMT -->
 </html>
