@@ -82,10 +82,10 @@
 
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="bitcoin-farm.html" class="nav-link">Crypto Trading</a>
+                                    <a href="{{ route('crypto') }}" class="nav-link">Crypto Trading</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="business-insurance.html" class="nav-link">Forex</a>
+                                    <a href="{{ route('forex') }}" class="nav-link">Forex</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="health-insurance.html" class="nav-link">Loans</a>
@@ -213,8 +213,7 @@
                     <ul class="contact-info">
                         <li>
                             <span>Location:</span>
-                            Fornäng 29
-                            589 73  LINKÖPING ,Sweden
+                            Baarerstrasse 53, 6300 Zug, Switzerland
                         </li>
                         <li>
                             <span>Contact:</span>

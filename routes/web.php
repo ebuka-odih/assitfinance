@@ -18,6 +18,8 @@ Route::get('/pricing', 'PagesController@pricing')->name('pricing');
 Route::view('/about', 'pages.about')->name('about');
 Route::view('/terms', 'pages.terms')->name('terms');
 Route::view('/contact', 'pages.terms')->name('contact');
+Route::view('/service/crypto', 'pages.crypto')->name('crypto');
+Route::view('/service/business-insurance', 'pages.forex')->name('forex');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
