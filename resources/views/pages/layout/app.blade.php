@@ -38,7 +38,7 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">Avillion Capital</h3>
+                        <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
 {{--                        <img src="assets/images/logo.png" alt="logo">--}}
                     </a>
 
@@ -51,7 +51,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index-3.html">
-                    <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
+                    <h3 style="font-weight: bolder; color: black">ç</h3>
                 </a>
 
                 <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');}</script>
@@ -88,7 +88,7 @@
                                     <a href="{{ route('forex') }}" class="nav-link">Forex</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="health-insurance.html" class="nav-link">Loans</a>
+                                    <a href="{{ route('forex') }}" class="nav-link">Loans</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="life-insurance.html" class="nav-link">NFP</a>
@@ -207,7 +207,7 @@
             <div class="col-lg-5">
                 <div class="single-footer-widget">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">Avillion Capital</h3>
+                        <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
                     </a>
 
                     <ul class="contact-info">
