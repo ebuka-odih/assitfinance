@@ -64,13 +64,13 @@
 
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a href="index-2.html" class="nav-link  active">
+                            <a href="{{ route('index') }}" class="nav-link  active">
                                 Home
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="about-us.html" class="nav-link ">
+                            <a href="{{ route('about') }}" class="nav-link ">
                                 About Us
                             </a>
                         </li>
@@ -218,7 +218,7 @@
                         </li>
                         <li>
                             <span>Contact:</span>
-                            +46 7671 04969
+                            +44 7404 080342
                         </li>
 
                         <li>
