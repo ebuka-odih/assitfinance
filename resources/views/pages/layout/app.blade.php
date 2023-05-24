@@ -51,7 +51,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index-3.html">
-                    <h3 style="font-weight: bolder; color: black">ç</h3>
+                    <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
                 </a>
 
                 <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');}</script>
@@ -88,13 +88,13 @@
                                     <a href="{{ route('forex') }}" class="nav-link">Forex</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('forex') }}" class="nav-link">Loans</a>
+                                    <a href="{{ route('loans') }}" class="nav-link">Loans</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="life-insurance.html" class="nav-link">NFP</a>
+                                    <a href="{{ route('npf') }}" class="nav-link">NFP</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="car-insurance.html" class="nav-link">Hedge Funds</a>
+                                    <a href="{{ route('hedge') }}" class="nav-link">Hedge Funds</a>
                                 </li>
 
                             </ul>
@@ -183,8 +183,7 @@
             <ul class="contact-list">
                 <li>
                     <i class="ri-map-pin-line"></i>
-                    Fornäng 29
-                    589 73  LINKÖPING
+                    Baarerstrasse 53, 6300 Zug, Switzerland
                 </li>
 
                 <li>
@@ -214,10 +213,6 @@
                         <li>
                             <span>Location:</span>
                             Baarerstrasse 53, 6300 Zug, Switzerland
-                        </li>
-                        <li>
-                            <span>Contact:</span>
-                            +44 7404 080342
                         </li>
 
                         <li>

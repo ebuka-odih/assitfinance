@@ -20,6 +20,9 @@ Route::view('/terms', 'pages.terms')->name('terms');
 Route::view('/contact', 'pages.terms')->name('contact');
 Route::view('/service/crypto', 'pages.crypto')->name('crypto');
 Route::view('/service/business-insurance', 'pages.forex')->name('forex');
+Route::view('/service/health-insurance', 'pages.loans')->name('loans');
+Route::view('/service/life-insurance', 'pages.npf')->name('npf');
+Route::view('/service/car-insurance', 'pages.hedge')->name('hedge');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
