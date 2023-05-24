@@ -12,11 +12,11 @@
                             <p>At Assit Finance, we've built our business around understanding what you need and what's important for you to protect. That's why we offer a wide range of investment services to meet your specific needs.</p>
 
                             <div class="banner-btn">
-                                <a href="register.html" class="default-btn">
+                                <a href="{{ route('register') }}" class="default-btn">
                                     <i class="ri-arrow-right-s-line"></i>
                                     Get Started
                                 </a>
-                                <a href="login.html" class="default-btn active">
+                                <a href="{{ route('login') }}" class="default-btn active">
                                     <i class="ri-send-plane-fill"></i>
                                     Login
                                 </a>
@@ -343,7 +343,7 @@
                                 </li>
                             </ul>
 
-                            <a href="register.html" class="default-btn">Choose Plan	</a>
+                            <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
                         </div>
                     </div>
 
@@ -375,7 +375,7 @@
                                 </li>
                             </ul>
 
-                            <a href="register.html" class="default-btn">Choose Plan	</a>
+                            <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
                         </div>
                     </div>
 
@@ -407,7 +407,7 @@
                                             </li>
                                         </ul>
 
-                                        <a href="register.html" class="default-btn">Choose Plan	</a>
+                                        <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-sm-6">
@@ -437,7 +437,7 @@
                                                 24/7 Support
                                             </li>
                                         </ul>
-            <a href="register.html" class="default-btn">Choose Plan	</a>
+            <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
 
                                     </div>
                                 </div>  -->
@@ -546,7 +546,7 @@
                             <h2>What they say about us honest reviews</h2>
                             <p>Everybody Loves us and you will too, we can't wait to welcome you to our family.</p>
 
-                            <a href="register.html" class="default-btn">
+                            <a href="{{ route('register') }}" class="default-btn">
                                 <i class="ri-arrow-right-s-line"></i>
                                 Join Us
                             </a>
