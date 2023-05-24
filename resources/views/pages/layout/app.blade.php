@@ -109,21 +109,21 @@
 
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">FAQ</a>
+                                    <a href="{{ route('faq') }}" class="nav-link">FAQ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                    <a href="{{ route('policy') }}" class="nav-link">Privacy Policy</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
+                                    <a href="{{ route('terms') }}" class="nav-link">Terms & Conditions</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="pricing-plan.html" class="nav-link">Plans</a>
+                            <a href="{{ route('pricing') }}" class="nav-link">Plans</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                            <a href="{{ route('contact') }}" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
 
@@ -221,28 +221,6 @@
                         </li>
                     </ul>
 
-                    <!-- <ul class="social-link">
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/" target="_blank">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/" target="_blank">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                    </ul> -->
                 </div>
             </div>
 
@@ -255,10 +233,10 @@
                             <ul class="use-link">
 
                                 <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="{{ route('policy') }}">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Services</a>
+                                    <a href="{{ route('services') }}">Services</a>
                                 </li>
                             </ul>
                         </div>
@@ -270,11 +248,11 @@
 
                             <ul class="use-link">
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <a href="{{ route('about') }}">About Us</a>
                                 </li>
 
                                 <li>
-                                    <a href="pricing-plan.html">Pricing</a>
+                                    <a href="{{ route('pricing') }}">Pricing</a>
                                 </li>
                             </ul>
                         </div>

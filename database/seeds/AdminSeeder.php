@@ -14,7 +14,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $admin = User::where('email', '=', 'admin@affluent-coinfx.com')->first();
+        $admin = User::where('email', '=', 'admin@assitfinance.com')->first();
         if($admin === null){
             DB::table('users')->insert([
                 'firstname' => 'Admin',
@@ -22,9 +22,9 @@ class AdminSeeder extends Seeder
                 'status' => 1,
                 'username' =>'admin',
                 'admin' => 1,
-                'email' => 'admin@affluent-coinfx.com',
+                'email' => 'admin@assitfinance.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
-                'password' => Hash::make('AFFLUENT'),
+                'password' => Hash::make('AssitFinance214'),
             ]);
         }
     }

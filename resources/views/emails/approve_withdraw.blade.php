@@ -1,7 +1,7 @@
 @component('mail::message')
 # Dear {{ $withdraw->user->fullname() }}
 
-You have successfully received your withdrawal from <a href="affluent-coinfx.com">affluent-coinfx.com</a> to your {{ $withdraw->withdraw_method['value'] }} wallet
+You have successfully received your withdrawal from <a href="assitfinance.com">assitfinance.com</a> to your {{ $withdraw->withdraw_method['value'] }} wallet
 
 <p>Amount: $@convert($withdraw->amount)</p>
 

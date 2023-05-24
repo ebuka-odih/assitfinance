@@ -14,15 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/pricing', 'PagesController@pricing')->name('pricing');
+Route::get('/pricing-plan', 'PagesController@pricing')->name('pricing');
 Route::view('/about', 'pages.about')->name('about');
-Route::view('/terms', 'pages.terms')->name('terms');
-Route::view('/contact', 'pages.terms')->name('contact');
 Route::view('/service/crypto', 'pages.crypto')->name('crypto');
 Route::view('/service/business-insurance', 'pages.forex')->name('forex');
 Route::view('/service/health-insurance', 'pages.loans')->name('loans');
 Route::view('/service/life-insurance', 'pages.npf')->name('npf');
 Route::view('/service/car-insurance', 'pages.hedge')->name('hedge');
+Route::view('/faq', 'pages.faq')->name('faq');
+Route::view('/privacy-policy', 'pages.policy')->name('policy');
+Route::view('/terms-and-conditions', 'pages.terms')->name('terms');
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/services', 'pages.services')->name('services');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

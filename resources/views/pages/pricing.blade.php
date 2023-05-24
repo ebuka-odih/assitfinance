@@ -1,171 +1,221 @@
 @extends('pages.layout.app')
 @section('content')
 
-<main>
-
-    <!-- start page title section -->
-    <section class="page-title-section2 bg-img cover-background" data-overlay-dark="5" data-background="assets/miner/img/bg/pricing-bg.jpg">
-
+    <!-- Start Page Title Area -->
+    <div class="page-title-area">
         <div class="container">
+            <div class="page-title-content">
+                <h2>Pricing Plan</h2>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Investment Plans</h1>
-                </div>
+                <ul>
+                    <li>
+                        <a href="index-3.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        Pricing
+                    </li>
+                </ul>
+
+                <img src="assets/images/choose-shape.png" alt="Image" class="shape shape-3" data-speed="0.09" data-revert="true">
             </div>
-
         </div>
 
-    </section>
-    <!-- end page title section -->
+        <img src="assets/images/subscribe-shape-1.png" alt="Image" class="shape shape-1" data-speed="0.04" data-revert="true">
+        <img src="assets/images/subscribe-shape-2.png.pagespeed.ce.99AunP_ELP.png" alt="Image" class="shape shape-2" data-speed="0.04" data-revert="true">
+    </div>
+    <!-- End Page Title Area -->
 
-    <section class="price bg-light-gray">
+    <!-- Start Pricing Area -->
+    <div class="pricing-area pt-100 pb-70">
         <div class="container">
-
-            <div class="section-heading">
-                <h3>Our Investment Pricing</h3>
+            <div class="section-title">
+                <span class="top-title">PRICING PLANS</span>
+                <h2>Choose From Our Popular Pricing Plan</h2>
             </div>
 
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="price-title">
+                            <h3>Plan 1</h3>
+                            <h2>$100 - $19,999</h2>
+                            <span><b>2% ROI</b> </span>
+                        </div>
 
-                @foreach($packages as $item)
-                <div class="col-lg-4">
-                    <div class="item text-center">
-                        <div class="type">
-                            <span class="icon"><i class="icofont icofont-diamond"></i></span>
-                            <h4>{{ $item->name }}</h4>
-                        </div>
-                        <div class="value">
-                            <h3>@convert($item->min_deposit)<span>$</span></h3>
-                            <span class="per">Minimum</span>
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Starting at $@convert($item->min_deposit)</li>
-                                <li>0% Commission</li>
-                                <li>{{ $item->daily_interest }}% ROI</li>
-                                <li>{{ $item->term_days }} Days(s)</li>
-                                <li>Referral Bonus</li>
-                            </ul>
-                        </div>
-                        <div class="order">
-                            <a href="{{ route('register') }}" class="butn small"><span>Choose Plan</span></a>
-                        </div>
+                        <ul>
+                            <li>
+                                <i class="ri-check-line"></i>
+                                Duration - 10 Days
+                            </li>
+                            <li>
+                                <i class="ri-check-line"></i>
+
+                            </li>
+                            <li>
+                                <i class="ri-check-line"></i>
+                                10% Referral Bonus
+                            </li>
+
+                            <li>
+                                <i class="ri-check-line"></i>
+                                24/7 Support
+                            </li>
+                        </ul>
+
+                        <a href="register.html" class="default-btn">Choose Plan	</a>
                     </div>
                 </div>
-                @endforeach
 
+                <div class="col-lg-6 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="price-title">
+                            <h3>Plan 2</h3>
+                            <h2>$20,000 - $Unlimited</h2>
+                            <span><b>3% ROI</b> </span>
+                        </div>
 
+                        <ul>
+                            <li>
+                                <i class="ri-check-line"></i>
+                                Duration - 10 Days
+                            </li>
+                            <li>
+                                <i class="ri-check-line"></i>
+
+                            </li>
+                            <li>
+                                <i class="ri-check-line"></i>
+                                10% Referral Bonus
+                            </li>
+
+                            <li>
+                                <i class="ri-check-line"></i>
+                                24/7 Support
+                            </li>
+                        </ul>
+
+                        <a href="register.html" class="default-btn">Choose Plan	</a>
+                    </div>
+                </div>
+
+                <!--			<div class="col-lg-3 col-sm-6">
+                                <div class="single-pricing">
+                                    <div class="price-title">
+                                    <h3>Plan 3</h3>
+                                        <h2>$15,000 - $29,000</h2>
+                                        <span>11.5% ROI </span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                            Duration - 5 Days
+                                        </li>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+
+                                        </li>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                    8% Referral Bonus
+                                        </li>
+
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                            24/7 Support
+                                        </li>
+                                    </ul>
+
+                                    <a href="register.html" class="default-btn">Choose Plan	</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="single-pricing">
+                                    <div class="price-title">
+                                        <h3>Plan 4</h3>
+                                        <h2>$30,000 - $Unlimited</h2>
+                                        <span>30% ROI </span>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                            Duration - 5 Days
+                                        </li>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+
+                                        </li>
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                    8% Referral Bonus
+                                        </li>
+
+                                        <li>
+                                            <i class="ri-check-line"></i>
+                                            24/7 Support
+                                        </li>
+                                    </ul>
+        <a href="register.html" class="default-btn">Choose Plan	</a>
+
+                                </div>
+                            </div>  -->
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End Pricing Area -->
 
-    <!-- start begin investing section -->
-    <section class="position-relative bg-transparent no-padding">
+    <!-- Start Our Review Area -->
+    <div class="our-review-area bg-color-f8f8f8 pt-100 pb-70">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 sm-margin-70px-bottom xs-margin-50px-bottom">
-                    <div class="pattern-img position-relative z-index-9">
-                        <img src="assets/miner/img/content/signup.jpg" alt="" class="rounded" />
-                    </div>
-                </div>
-                <div class="col-md-10 col-lg-6">
+                <div class="col-xl-8">
+                    <div class="review-slide owl-carousel owl-theme">
+                        <div class="single-review-item style-three">
+                            <div class="review-img">
+                                <img src="assets/images/review/xreview-1.jpg.pagespeed.ic.ZD6ggsxU8n.jpg" alt="Image">
+                            </div>
 
-                    <div class="service-design padding-45px-left sm-no-padding-left">
-                        <span>What Next?</span>
-                        <h3>Begin your wealth journey with us now!</h3>
-                        <p>We are inviting you to come onboard the Affluent CoinFX investment platform and begin enjoying outstanding returns on your investment.</p>
-                        <div class="display-inline-block vertical-align-middle font-weight-700 font-size18 sm-font-size16 margin-25px-right">Register</div>
-                        <div class="display-inline-block vertical-align-middle about-video padding-20px-tb">
-                            <a class="video video_btn video_btn-style2 small" href="register.html"><i class="fas fa-play"></i></a>
+                            <p>We have been with ACL for years now. Always very helpful with any questions or any changes necessary. Even when we have had claims they are always very helpful. Would not change for any other company.</p>
+
+                            <h3>Jennifer Ajazi</h3>
+                            <span>Marketing Ex.</span>
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+
+                        <div class="single-review-item style-three">
+                            <div class="review-img">
+                                <img src="assets/images/review/xreview-2.jpg.pagespeed.ic.Q22Pp41wJb.jpg" alt="Image">
+                            </div>
+
+                            <p>I had never use another investment company since i started working with Assit Finance and they have exceeded my expectations.</p>
+
+                            <h3>David Shanaham</h3>
+                            <span>Home Owner</span>
+                            <i class="ri-double-quotes-r"></i>
                         </div>
                     </div>
+                </div>
 
+                <div class="col-xl-4">
+                    <div class="review-content style-two style-three">
+                        <span class="top-title">OUR REVIEW</span>
+                        <h2>What They Say About Us, Honest Reviews</h2>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- end begin investing section -->
+
+        <img src="assets/images/review/shape-1.png.pagespeed.ce.w-rsMR8_E2.png" alt="Image" class="shape shape-1" data-speed="0.04" data-revert="true">
+        <img src="assets/images/review/shape-2.png.pagespeed.ce.7J_5FHRrq2.png" alt="Image" class="shape shape-2" data-speed="0.04" data-revert="true">
+        <img src="assets/images/review/shape-3.png.pagespeed.ce.XSYmXthrXg.png" alt="Image" class="shape shape-3" data-speed="0.04" data-revert="true">
+    </div>
+    <!-- End Our Review Area -->
 
 
-    <!-- special pricing -->
-    <section class="price bg-light-gray">
-        <div class="container">
-
-            <div class="section-heading">
-                <h3>Special Plans</h3>
-            </div>
-
-            <div class="row">
-                <!-- start table -->
-                <div class="col-lg-5 sm-margin-30px-bottom">
-                    <div class="item text-center active">
-                        <div class="type">
-                            <h4>Affluent CoinFX LP</h4>
-                        </div>
-                        <div class="value">
-                            <h3>Custom Pricing</h3>
-                            <!-- <span class="per">Minimum</span> -->
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Unlimited Amount</li>
-                                <li>Protocol Based</li>
-                                <li>Custom Duration</li>
-                                <li>Investors Only</li>
-                            </ul>
-                        </div>
-                        <p>Our Affluent CoinFX LP fund is one of our funds which gives investors direct profit opportunities.</p>
-                        <div class="order">
-                            <a href="mailto:support@digitachainx.com" class="butn medium"><span>GET STARTED</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end table -->
-
-                <!-- start table -->
-                <div class="col-lg-5 sm-margin-30px-bottom">
-                    <div class="item text-center active">
-                        <div class="type">
-                            <h4>Affluent CoinFX 2.0</h4>
-                        </div>
-                        <div class="value">
-                            <h3>Custom Pricing</h3>
-                            <!-- <span class="per">Minimum</span> -->
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>Longterm</li>
-                                <li>Protocol Based</li>
-                                <li>Custom Duration</li>
-                                <li>Investors Only</li>
-                            </ul>
-                        </div>
-                        <p>Our Affluent CoinFX 2.0 is our longterm ecosystem blockchain trust in protocols with our Web 3 partners on 3x scale.</p>
-                        <div class="order">
-                            <a href="mailto:support@affluent-coinfx.com" class="butn theme medium"><span>GET STARTED</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end table -->
-            </div>
-        </div>
-    </section>
-    <!-- end special section -->
-
-    <!-- start advice section -->
-    <section class="parallax" data-overlay-dark="7" data-background="https://digitachainx.com/assets/miner/img/bg/talk-to-advisor.jpg" id="advice">
-        <div class="container text-center">
-            <div class="section-heading title-style5 half white">
-                <h4>Didn't find the right plan for your financial goals?</h4>
-                <p>Talk to one of our investment advisors to create a custom plan for you right away.</p>
-            </div>
-            <a href="login.html" class="butn theme white-hover" target="_blank"><span>Talk To An Advisor</span></a>
-        </div>
-    </section>
-    <!-- end advice section -->
-
-
-</main>
 
 @endsection
