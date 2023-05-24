@@ -213,7 +213,7 @@
                                 <h3 class="text-white">Assit Finance</h3>
 {{--                                <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">--}}
 {{--                                <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">--}}
-                                <span class="nio-version">Crypto</span>
+                                <span class="nio-version">Invest</span>
                             </a>
                             <div id="google_translate_element"></div>
                             <script>
@@ -312,7 +312,7 @@
             <div class="nk-footer nk-footer-fluid bg-lighter">
                 <div class="container-xl wide-lg">
                     <div class="nk-footer-wrap">
-                        <div class="nk-footer-copyright"> &copy; 2022 Assit Finance
+                        <div class="nk-footer-copyright"> &copy; 2017 - {{ Date('Y') }} Assit Finance
                         </div>
                         <div class="nk-footer-links">
                             <ul class="nav nav-sm">

@@ -43,16 +43,90 @@
                     </a>
 
                 </div>
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                        {
+                            "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Bitcoin"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Ethereum"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                            "colorTheme": "dark",
+                            "isTransparent": false,
+                            "displayMode": "adaptive",
+                            "locale": "en"
+                        }
+                    </script>
+                </div>
             </div>
         </div>
     </div>
     <center><div id="google_translate_element"></div></center>
     <div class="desktop-nav">
         <div class="container-fluid">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                        {
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500"
+                        },
+                        {
+                            "proName": "FOREXCOM:NSXUSD",
+                            "title": "US 100"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "Bitcoin"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "Ethereum"
+                        }
+                    ],
+                        "showSymbolLogo": true,
+                        "colorTheme": "dark",
+                        "isTransparent": false,
+                        "displayMode": "adaptive",
+                        "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <!-- TradingView Widget END -->
             <nav class="navbar navbar-expand-md navbar-light">
+
                 <a class="navbar-brand" href="index-3.html">
                     <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
                 </a>
+
 
                 <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');}</script>
 
@@ -136,7 +210,7 @@
                                     </a>
                                 </li>   -->
                             <li>
-                                <a href="login.html" class="default-btn">
+                                <a href="{{ route('login') }}" class="default-btn">
 
                                     Client Portal
                                 </a>
@@ -272,7 +346,7 @@
 <div class="copy-right-area bg-color-f3f9f8">
     <div class="container">
         <div class="copy-right-content">
-            <p>© {{ Date('Y') }} Assit Finance Limited</p>
+            <p>© 2017 - {{ Date('Y') }} Assit Finance Limited</p>
         </div>
     </div>
 </div>

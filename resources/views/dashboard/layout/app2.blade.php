@@ -173,7 +173,7 @@
         <div class="nk-footer nk-footer-fluid bg-lighter">
             <div class="container-xl wide-lg">
                 <div class="nk-footer-wrap">
-                    <div class="nk-footer-copyright"> &copy; 2022 Assit Finance
+                    <div class="nk-footer-copyright"> &copy; 2017 - {{ Date('Y') }} Assit Finance
                     </div>
                     <div class="nk-footer-links">
                         <ul class="nav nav-sm">
