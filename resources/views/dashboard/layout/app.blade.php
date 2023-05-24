@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Affluent CoinFX">
+    <meta name="author" content="Assit Finance">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Investment | Affluent CoinFX</title>
+    <title>Investment | Assit Finance</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('client/assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('client/assets/css/theme.css?ver=2.4.0') }}">
@@ -53,7 +53,7 @@
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-                        <h4 class="text-white">Affluent CoinFX</h4>
+                        <h4 class="text-white">Assit Finance</h4>
                         <span class="nio-version">Invest</span>
                     </a>
                 </div>
@@ -210,7 +210,7 @@
                         </div>
                         <div class="nk-header-brand d-xl-none">
                             <a href="{{ route('user.dashboard') }}" class="logo-link">
-                                <h3 class="text-white">Affluent CoinFX</h3>
+                                <h3 class="text-white">Assit Finance</h3>
 {{--                                <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">--}}
 {{--                                <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">--}}
                                 <span class="nio-version">Crypto</span>
@@ -312,7 +312,7 @@
             <div class="nk-footer nk-footer-fluid bg-lighter">
                 <div class="container-xl wide-lg">
                     <div class="nk-footer-wrap">
-                        <div class="nk-footer-copyright"> &copy; 2022 Affluent CoinFX
+                        <div class="nk-footer-copyright"> &copy; 2022 Assit Finance
                         </div>
                         <div class="nk-footer-links">
                             <ul class="nav nav-sm">
