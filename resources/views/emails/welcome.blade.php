@@ -51,7 +51,7 @@
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                             <p style="font-size: 18px">
-                                                Welcome to {{ env('APP_NAME') }} We are trilled to have you on board
+                                                 thank you for your registration into assitfinance.com your financial aim you will achieve
                                             </p>
 
                                         </td>
