@@ -26,6 +26,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Title -->
     <title>AssitFinance Group</title>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e0056248-2afe-4190-82fc-13590ba94883";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
 <body>
@@ -376,7 +377,7 @@
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 <!-- GetButton.io widget -->
-<script type="text/javascript">(function(){var options={whatsapp:"+46767104969",call_to_action:"Message us",button_color:"#FF6550",position:"left",};var proto='index.html',host="getbutton.io",url=proto+'//static.'+host;var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url+'/widget-send-button/js/init.js';s.onload=function(){WhWidgetSendButton.init(host,proto,options);};var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);})();</script>
+{{--<script type="text/javascript">(function(){var options={whatsapp:"+46767104969",call_to_action:"Message us",button_color:"#FF6550",position:"left",};var proto='index.html',host="getbutton.io",url=proto+'//static.'+host;var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url+'/widget-send-button/js/init.js';s.onload=function(){WhWidgetSendButton.init(host,proto,options);};var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);})();</script>--}}
 <!-- /GetButton.io widget -->
 
 </body>
