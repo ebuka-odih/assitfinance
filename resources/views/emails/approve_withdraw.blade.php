@@ -55,7 +55,7 @@
                                             <br>
                                             <p>Amount: $@convert($withdraw->amount)</p>
 
-                                            <p>Be informed that any deposit made on our VIP plan package attracts and instant bonus of $1000 instantly withdraw- able.
+                                            <p>Be informed that any deposit made on our VIP plan package attracts and instant bonus of $1000 instantly withdraw-able.
                                                 <br>Please chat our live customer support for more details</p>
                                         </td>
                                     </tr>
