@@ -1,11 +1,15 @@
 @component('mail::message')
-# Introduction
+# Hello Admin
 
-The body of your message.
+A withdrawal request from
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+
+<p>Name: {{ optional($withdraw->user)->fullname() }}.</p>
+<br>
+<p>Amount: {{ $withdraw->amount }}</p>
+
+<br>
+<p>Visit your admin dashboard for more details</p>
 
 Thanks,<br>
 {{ config('app.name') }}

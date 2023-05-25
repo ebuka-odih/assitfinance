@@ -27,10 +27,7 @@
                 <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                     <div class="brand-logo pb-4 text-center">
                         <a href="/" class="logo-link">
-{{--                            <h3 class="text-white">{{ env('APP_NAME')}}</h3>--}}
-                            <img class="logo-img logo-img-lg" src="{{ asset('img/logo2.png') }}" srcset="{{ asset('img/logo.png') }} 2x" alt="logo">
-{{--                            <img class="logo-dark logo-img logo-img-lg" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">--}}
-{{--                       --}}
+                            <h2 style="color: white; font-weight: bolder">{{ env('APP_NAME') }}</h2>
                         </a>
                     </div>
                     <div class="card card-bordered">
