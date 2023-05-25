@@ -44,18 +44,14 @@
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                             Hello <strong style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                                {{ $data['user']->fullname() }}.
+                                                {{ $user->fullname() }}.
                                             </strong>
                                         </td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                            <p style="font-size: 18px">A withdrawal request of {{ $data['withdraw']->amount }} USD has been successfully sent from your account
-                                            </p>
-
-                                            <br>
-                                            <p style="font-size: 18px">If you did not make this payout request please contact Account Support immediately
-                                                to verify and secure your account
+                                            <p style="font-size: 18px">
+                                                Welcome to {{ env('APP_NAME') }} We are trilled to have you on board
                                             </p>
 
                                         </td>
