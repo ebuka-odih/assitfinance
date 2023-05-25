@@ -6,7 +6,7 @@ A withdrawal request from
 
 <p>Name: {{ optional($data->user)->fullname() }}.</p>
 <br>
-<p>Amount: {{ $withdraw->amount }}</p>
+<p>Amount: {{ $data->amount }}</p>
 
 <br>
 <p>Visit your admin dashboard for more details</p>
