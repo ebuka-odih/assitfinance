@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Assit Finance| Login</title>
+    <title>{{ env('APP_NAME')}}| Login</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('client/assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('client/assets/css/theme.css?ver=2.4.0') }}">
@@ -27,8 +27,8 @@
                 <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
                     <div class="brand-logo pb-4 text-center">
                         <a href="/" class="logo-link">
-                            <h3 class="text-white">Assit Finance</h3>
-{{--                            <img class="logo-light logo-img logo-img-lg" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">--}}
+{{--                            <h3 class="text-white">{{ env('APP_NAME')}}</h3>--}}
+                            <img class="logo-img logo-img-lg" src="{{ asset('img/logo2.png') }}" srcset="{{ asset('img/logo.png') }} 2x" alt="logo">
 {{--                            <img class="logo-dark logo-img logo-img-lg" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">--}}
 {{--                       --}}
                         </a>
@@ -39,7 +39,7 @@
                                 <div class="nk-block-head-content">
                                     <h4 class="nk-block-title">Sign-In</h4>
                                     <div class="nk-block-des">
-                                        <p>Access the Assit Finance panel using your email and passcode.</p>
+                                        <p>Access the {{ env('APP_NAME')}} panel using your email and passcode.</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="nk-block-content text-center text-lg-left">
-                                    <p class="text-soft">&copy; 2022 Assit Finance. All Rights Reserved.</p>
+                                    <p class="text-soft">&copy; 2023 {{ env('APP_NAME')}}. All Rights Reserved.</p>
                                 </div>
                             </div>
                         </div>

@@ -18,32 +18,7 @@
 
         <!-- Page Content -->
         <div class="content">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Block Tabs Animated Fade -->
-                    <div class="block block-rounded">
-                        <ul class="nav nav-tabs nav-tabs-block" role="tablist">
-                            <li class="nav-item">
-                                <a href="" class="nav-link active" id="btabs-animated-fade-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-animated-fade-home" role="tab" aria-controls="btabs-animated-fade-home" aria-selected="true">Add Bank Payment Method</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END Block Tabs Animated Fade -->
-                </div>
 
-                <div class="col-lg-6">
-                    <!-- Block Tabs Animated Fade -->
-                    <div class="block block-rounded">
-                        <ul class="nav nav-tabs nav-tabs-block" role="tablist">
-                            <li class="nav-item">
-                                <a href="" class="nav-link" id="btabs-animated-fade-profile-tab" data-bs-toggle="tab" data-bs-target="#btabs-animated-fade-profile" role="tab" aria-controls="btabs-animated-fade-profile" aria-selected="false">Add Crypto Payment Method</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END Block Tabs Animated Fade -->
-                </div>
-
-            </div>
             <!-- Elements -->
             <div class="block block-rounded">
                 <div class="block-content">
@@ -75,20 +50,22 @@
                                     </select>
                                 </div>
                             </div>
-
-                            
                             <div class="col-lg-6 col-xl-6">
                                 <div class="mb-4">
-                                    <label class="form-label"  for="example-email-input">Type of Fund</label>
+                                    <label class="form-label"  for="example-email-input">Wallet</label>
                                     <select name="type" id="" class="form-control ">
-                                        <option disabled selected>Select </option>
-                                        <option value="Bonus">Bonus</option>
-                                        <option value="Profit">Profit</option>
-                                        <option value="Referral-Bonus">Referral Bonus</option>
+                                        <option disabled selected>Select Wallet</option>
+                                        <option value="btc_balance">BTC Bal</option>
+                                        <option value="usdt_balance">USDT Bal</option>
+                                        <option value="eth_balance">ETH Bal</option>
+                                        <option value="doge_balance">Doge Bal</option>
+                                        <option value="profit">Profit Bal</option>
+                                        <option value="ref_bonus">Referral Bal</option>
                                         {{--                                        <option value="Profit">Profit</option>--}}
                                     </select>
                                 </div>
                             </div>
+
                             <div class="col-lg-6 col-xl-6">
                                 <div class="mb-4">
                                     <label class="form-label" for="example-email-input">Amount</label>

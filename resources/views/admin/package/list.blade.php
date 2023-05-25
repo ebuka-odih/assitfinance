@@ -26,6 +26,7 @@
                     <table class="table table-striped table-vcenter">
                         <thead>
                         <tr>
+                            <th class="text-center" style="width: 50px;">#</th>
                             <th>Name</th>
                             <th>Term Day(s)</th>
                             <th>Daily Interest(%)</th>
@@ -37,7 +38,7 @@
                         <tbody>
                         @foreach($packages as $index => $item)
                             <tr>
-{{--                                <th class="text-center" scope="row">{{ $index + 1 }}</th>--}}
+                                <th class="text-center" scope="row">{{ $index + 1 }}</th>
                                 <td class="fw-semibold">
                                     {{ $item->name }}
                                 </td>

@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Assit Finance">
+    <meta name="author" content=" {{ env('APP_NAME') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Investment | Assit Finance</title>
+    <title>Investment |  {{ env('APP_NAME') }}</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('client/assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('client/assets/css/theme.css?ver=2.4.0') }}">
+    <script src="//code.jivosite.com/widget/5tCCVWktyu" async></script>
 
     <style>
         #google_translate_element {
@@ -42,6 +43,7 @@
 
 
     </style>
+
 </head>
 
 <body class="nk-body npc-crypto bg-white has-sidebar ">
@@ -53,7 +55,7 @@
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-                        <h4 class="text-white">Assit Finance</h4>
+                        <h4 class="text-white"> {{ env('APP_NAME') }}</h4>
                         <span class="nio-version">Invest</span>
                     </a>
                 </div>
@@ -68,8 +70,7 @@
                             <div class="user-account-info between-center">
                                 <div class="user-account-main">
                                     <h6 class="overline-title-alt">Available Balance</h6>
-                                    <div class="user-balance">@convert(auth()->user()->balance) <small class="currency currency-btc">USD</small></div>
-                                    <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>
+                                    <div class="user-balance">@convert(auth()->user()->balance()) <small class="currency currency-btc">Bal</small></div>
                                 </div>
                                 <a href="#" class="btn btn-white btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
                             </div>
@@ -102,8 +103,7 @@
                                 <div class="user-account-info between-center">
                                     <div class="user-account-main">
                                         <h6 class="overline-title-alt">Available Balance</h6>
-                                        <div class="user-balance">@convert(auth()->user()->balance) <small class="currency currency-btc">USD</small></div>
-                                        <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>
+                                        <div class="user-balance">@convert(auth()->user()->balance()) <small class="currency currency-btc">USD</small></div>
                                     </div>
                                     <a href="#" class="btn btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
                                 </div>
@@ -145,6 +145,18 @@
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
+                                    <a href="{{ route('user.deposit') }}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-arrow-down"></em></span>
+                                        <span class="nk-menu-text">Deposit</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="{{ route('user.withdraw') }}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-arrow-up"></em></span>
+                                        <span class="nk-menu-text">Withdraw</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-item">
                                     <a href="{{ route('user.transactions') }}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class=" icon ni ni-repeat"></em></span>
                                         <span class="nk-menu-text">Transactions</span>
@@ -175,10 +187,10 @@
                                         <span class="nk-menu-text">My Profile</span>
                                     </a>
                                 </li>
-                                <li class="nk-menu-heading">
-                                    <a href="e67">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-help-alt"></em></span>
-                                        <span class="nk-menu-text">Support</span>
+                                <li class="nk-menu-item">
+                                    <a href="{{ route('user.all_referrals') }}" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Referrals</span>
                                     </a>
                                 </li>
                                 <li class="nk-menu-heading">
@@ -210,12 +222,13 @@
                         </div>
                         <div class="nk-header-brand d-xl-none">
                             <a href="{{ route('user.dashboard') }}" class="logo-link">
-                                <h3 class="text-white">Assit Finance</h3>
+                                <h3 class="text-white"> {{ env('APP_NAME') }}</h3>
 {{--                                <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">--}}
 {{--                                <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">--}}
-                                <span class="nio-version">Invest</span>
+                                <span class="nio-version">Crypto</span>
                             </a>
                             <div id="google_translate_element"></div>
+
                             <script>
                                 function googleTranslateElementInit() {
                                     new google.translate.TranslateElement({
@@ -223,6 +236,8 @@
                                     }, 'google_translate_element');
                                 }
                             </script>
+
+
                         </div>
                         <div class="nk-header-news d-none d-xl-block">
                             <div class="nk-news-list">
@@ -252,7 +267,7 @@
                                                 <em class="icon ni ni-user-alt"></em>
                                             </div>
                                             <div class="user-info d-none d-md-block">
-                                                <div class="user-status user-status-unverified">Unverified</div>
+                                                <div >{!! auth()->user()->status() !!}</div>
                                                 <div class="user-name dropdown-indicator">{{ auth()->user()->fullname() }}</div>
                                             </div>
                                         </div>
@@ -276,6 +291,7 @@
                                                 <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
                                             </ul>
                                         </div>
+
                                         <div class="dropdown-inner">
                                             <ul class="link-list">
                                                 <li>
@@ -312,7 +328,7 @@
             <div class="nk-footer nk-footer-fluid bg-lighter">
                 <div class="container-xl wide-lg">
                     <div class="nk-footer-wrap">
-                        <div class="nk-footer-copyright"> &copy; 2017 - {{ Date('Y') }} Assit Finance
+                        <div class="nk-footer-copyright"> &copy; 2023  {{ env('APP_NAME') }}
                         </div>
                         <div class="nk-footer-links">
                             <ul class="nav nav-sm">
@@ -335,7 +351,6 @@
 <script src="{{ asset('client/assets/js/bundle.js?ver=2.4.0') }}"></script>
 <script src="{{ asset('client/assets/js/scripts.js?ver=2.4.0') }}"></script>
 <script src="{{ asset('client/assets/js/charts/chart-crypto.js?ver=2.4.0') }}"></script>
-<script src="//code.jivosite.com/widget/TzMcqSGn8K" async></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>

@@ -16,19 +16,23 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::delete('delete/user', 'Admin\UserController@deleteUser')->name('deleteUser');
     Route::get('add-wallet', "Admin\UserController@wallet")->name('wallet');
     Route::post('add-wallet', "Admin\UserController@storeWallet")->name('storeWallet');
+    Route::get('user/deposits/{id}', "Admin\UserController@userDeposits")->name('userDeposits');
+    Route::get('user/withdrawal/{id}', "Admin\UserController@userWithdrawal")->name('userWithdrawal');
+
 
     Route::get('user/withdrawal/method/{id}', "Admin\UserController@userWithdrawMethod")->name('userWithdrawMethod');
     Route::delete('delete/user/{id}', "Admin\UserController@deleteUser")->name('deleteUser');
 
 
     Route::get('deposits', "Admin\AdminDeposit@deposits")->name('deposit');
-    Route::get('view/deposits', "Admin\AdminDeposit@view_deposit")->name('view_deposit');
-    Route::get('approve/deposit/{id}', "Admin\AdminDeposit@approve_deposit")->name('approve_deposit');
+    Route::get('view/deposit/{id}', "Admin\AdminDeposit@view_deposit")->name('view_deposit');
+    Route::post('approve/deposit/{id}', "Admin\AdminDeposit@approve_deposit")->name('approve_deposit');
     Route::delete('delete/deposit/{id}', "Admin\AdminDeposit@deleteDeposit")->name('deleteDeposit');
 
-    
+
 
     // Withdrawal Route
+    Route::get('withdraw/detail/{id}', "Admin\AdminWithdraw@withdrawDetails")->name('withdrawDetails');
     Route::get('withdrawals', "Admin\AdminWithdraw@withdrawal")->name('withdrawal');
     Route::get('approve/withdrawal/{id}', "Admin\AdminWithdraw@approve_withdrawal")->name('approve_withdrawal');
     Route::delete('delete/withdrawal/{id}', "Admin\AdminWithdraw@delete_withdrawal")->name('delete_withdrawal');
@@ -41,5 +45,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
 
     Route::resource('wallet', "Admin\PaymentMethodController");
 
+    Route::get('investments', "Admin\AdminInvestment@investments")->name('investment');
+    Route::get('investment/details/{id}', "Admin\AdminInvestment@investmentDetails")->name('investmentDetails');
 
 });

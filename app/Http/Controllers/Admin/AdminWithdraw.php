@@ -17,15 +17,68 @@ class AdminWithdraw extends Controller
         return view('admin.transactions.withdrawal', compact('withdrawal'));
     }
 
-    public function approve_withdrawal($id)
+    public function withdrawDetails($id)
     {
         $withdraw = Withdraw::findOrFail($id);
+        return view('admin.transactions.withdraw-detail', compact('withdraw'));
+    }
+
+    public function approve_withdrawal($id)
+    {
+
+        $withdraw = Withdraw::findOrFail($id);
         $user = User::findOrFail($withdraw->user_id);
-        $user->balance -= $withdraw->amount;
-        $user->save();
-        $withdraw->save();
-        Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
-        return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        if ($withdraw->wallet == 'btc_balance')
+        {
+            $user->btc_balance -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }elseif($withdraw->wallet == 'usdt_balance')
+        {
+            $user->usdt_balance -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }elseif($withdraw->wallet == 'eth_balance')
+        {
+            $user->eth_balance -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }elseif($withdraw->wallet == 'doge_balance')
+        {
+            $user->doge_balance -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }elseif($withdraw->wallet == 'profit')
+        {
+            $user->profit -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }elseif($withdraw->wallet == 'ref_bonus')
+        {
+            $user->ref_bonus -= $withdraw->amount;
+            $user->save();
+            $withdraw->status = 1;
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+            return redirect()->back()->with('success', "Withdrawal Approved Successfully");
+        }
+        return redirect()->back();
+
     }
 
     public function delete_withdrawal($id)

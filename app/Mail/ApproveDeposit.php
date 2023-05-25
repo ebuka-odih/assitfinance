@@ -29,8 +29,6 @@ class ApproveDeposit extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.approveDeposit')
-            ->subject('Assit Finance')
-            ->from('noreply@assitfinance.com');
+        return $this->view('emails.approveDeposit');
     }
 }

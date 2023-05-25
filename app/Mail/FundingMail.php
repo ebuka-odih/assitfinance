@@ -29,8 +29,6 @@ class FundingMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.fundingmail')
-            ->from('noreply@assitfinance.com', "Assit Finance")
-            ->subject('Assit Finance');
+        return $this->view('emails.fundingmail');
     }
 }

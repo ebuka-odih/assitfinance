@@ -10,7 +10,7 @@
 
                 <ul>
                     <li>
-                        <a href="index-3.html">
+                        <a href="{{ route('index') }}">
                             Home
                         </a>
                     </li>
@@ -33,13 +33,13 @@
     <section class="ptb-100">
         <div class="container">
             <div class="main-content-text">
-                <h1>Privacy Policy for Assit Finance Group</h1>
+                <h1>Privacy Policy for AssitFinance Group</h1>
 
-                <p>At Assit Finance Group, accessible from www.Assit Finance.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Assit Finance Group and how we use it.</p>
+                <p>At AssitFinance Group, accessible from www.AssitFinance.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by AssitFinance Group and how we use it.</p>
 
                 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
-                <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Assit Finance Group. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+                <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in AssitFinance Group. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 
                 <h2>Consent</h2>
 
@@ -67,11 +67,11 @@
 
                 <h2>Log Files</h2>
 
-                <p>Assit Finance Group follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+                <p>AssitFinance Group follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
 
                 <h2>Cookies and Web Beacons</h2>
 
-                <p>Like any other website, Assit Finance Group uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+                <p>Like any other website, AssitFinance Group uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
 
                 <h2>Google DoubleClick DART Cookie</h2>
 
@@ -90,15 +90,15 @@
 
                 <h2>Advertising Partners Privacy Policies</h2>
 
-                <P>You may consult this list to find the Privacy Policy for each of the advertising partners of Assit Finance Group.</P>
+                <P>You may consult this list to find the Privacy Policy for each of the advertising partners of AssitFinance Group.</P>
 
-                <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Assit Finance Group, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+                <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on AssitFinance Group, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
 
-                <p>Note that Assit Finance Group has no access to or control over these cookies that are used by third-party advertisers.</p>
+                <p>Note that AssitFinance Group has no access to or control over these cookies that are used by third-party advertisers.</p>
 
                 <h2>Third Party Privacy Policies</h2>
 
-                <p>Assit Finance Group's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+                <p>AssitFinance Group's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
 
                 <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
 
@@ -125,7 +125,7 @@
 
                 <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-                <p>Assit Finance Group does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p></div>
+                <p>AssitFinance Group does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p></div>
         </div>
     </section>
     <!-- End Privacy policy Area -->

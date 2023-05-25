@@ -29,8 +29,6 @@ class AdminDepositAlert extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.admin-deposit-alert')
-            ->subject('Assit Finance')
-            ->from('noreply@assitfinance.com');
+        return $this->view('emails.admin-deposit-alert');
     }
 }

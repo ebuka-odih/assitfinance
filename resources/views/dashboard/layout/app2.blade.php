@@ -8,7 +8,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Investment | Assit Finance</title>
+    <title>Investment |  {{ env('APP_NAME') }}</title> {{ env('APP_NAME') }}
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets2/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('assets2/css/theme.css?ver=2.4.0') }}">
@@ -40,6 +40,8 @@
 
 
     </style>
+        <script src="//code.jivosite.com/widget/5tCCVWktyu" async></script>
+
 </head>
 
 <body class="nk-body npc-invest bg-lighter ">
@@ -55,7 +57,7 @@
                     </div>
                     <div class="nk-header-brand">
                         <a href="{{ route('user.dashboard') }}" class="logo-link">
-                            <h4 class="text-white">Assit Finance</h4>
+                            <h4 class="text-white"> {{ env('APP_NAME') }}</h4>
                             <span class="nio-version">Invest</span>
                         </a>
                     </div><!-- .nk-header-brand -->
@@ -63,7 +65,7 @@
                         <div class="nk-header-mobile">
                             <div class="nk-header-brand">
                                 <a href="{{ route('user.dashboard') }}" class="logo-link">
-                                    <h4 class="text-white">Assit Finance</h4>
+                                    <h4 class="text-white"> {{ env('APP_NAME') }}</h4>
                                     <span class="nio-version">Invest</span>
                                 </a>
                             </div>
@@ -143,14 +145,12 @@
                                     </div>
                                     <div class="dropdown-inner user-account-info">
                                         <h6 class="overline-title-alt">Account Balance</h6>
-                                        <div class="user-balance">@convert(auth()->user()->balance) <small class="currency currency-btc">USD</small></div>
-                                        <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>
+                                        <div class="user-balance">@convert(auth()->user()->balance()) <small class="currency currency-btc">USD</small></div>
                                     </div>
                                     <div class="dropdown-inner">
                                         <ul class="link-list">
-                                            <li><a href="html/invest/profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
-                                            <li><a href="html/invest/profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
-                                            <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                            <li><a href="{{ route('user.profile') }}"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                            <li><a href="{{ route('user.security') }}"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="dropdown-inner">
@@ -173,7 +173,7 @@
         <div class="nk-footer nk-footer-fluid bg-lighter">
             <div class="container-xl wide-lg">
                 <div class="nk-footer-wrap">
-                    <div class="nk-footer-copyright"> &copy; 2017 - {{ Date('Y') }} Assit Finance
+                    <div class="nk-footer-copyright"> &copy; 2023  {{ env('APP_NAME') }}
                     </div>
                     <div class="nk-footer-links">
                         <ul class="nav nav-sm">
@@ -194,7 +194,6 @@
 <script src="{{ asset('assets2/js/bundle.js?ver=2.4.0') }}"></script>
 <script src="{{ asset('assets2/js/scripts.js?ver=2.4.0') }}"></script>
 <script src="{{ asset('assets2/js/charts/chart-invest.js?ver=2.4.0') }}"></script>
-<script src="//code.jivosite.com/widget/TzMcqSGn8K" async></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>

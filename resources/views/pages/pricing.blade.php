@@ -9,7 +9,7 @@
 
                 <ul>
                     <li>
-                        <a href="index-3.html">
+                        <a href="{{ route('index') }}">
                             Home
                         </a>
                     </li>
@@ -191,7 +191,7 @@
                                 <img src="assets/images/review/xreview-2.jpg.pagespeed.ic.Q22Pp41wJb.jpg" alt="Image">
                             </div>
 
-                            <p>I had never use another investment company since i started working with Assit Finance and they have exceeded my expectations.</p>
+                            <p>I had never use another investment company since i started working with AssitFinance and they have exceeded my expectations.</p>
 
                             <h3>David Shanaham</h3>
                             <span>Home Owner</span>

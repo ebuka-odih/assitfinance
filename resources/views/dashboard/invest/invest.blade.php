@@ -30,7 +30,7 @@
                                         </div>
                                         <div class="invest-amount-item">
                                             <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-2">
-                                            <label class="invest-amount-label" for="iv-amount-2">Max: $ @convert($plan->max_deposit())</label>
+                                            <label class="invest-amount-label" for="iv-amount-2">Max: $ @convert($plan->max_deposit)</label>
                                         </div>
 
                                     </div>

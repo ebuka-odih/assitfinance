@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Deposit;
+use App\Investment;
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -16,8 +17,7 @@ class Controller extends BaseController
     public function add_bonus()
     {
 
-
-        $deposits = Deposit::whereUserId(auth()->id())->whereCompleted(false)->get();
+        $deposits = Investment::whereUserId(auth()->id())->whereCompleted(false)->get();
 
         if($deposits){
             foreach ($deposits as $deposit_detail){
@@ -27,6 +27,7 @@ class Controller extends BaseController
 
                 if($current_date->isoFormat('MMMM Do YYYY') == $d_ended->isoFormat('MMMM Do YYYY')){
                     $user->profit += $deposit_detail->earning;
+                    $user->balance += $deposit_detail->earning;
                     $user->save();
                     $deposit_detail->completed = true;
                     $deposit_detail->save();

@@ -12,7 +12,7 @@
                 <!-- start banner headline text -->
                 <div class="display-table-cell vertical-align-middle">
                     <p>The easiest place to invest</p>
-                    <h1>Términos y condiciones</h1>
+
                 </div>
                 <!-- end banner headline text -->
 

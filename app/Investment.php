@@ -21,26 +21,26 @@ class Investment extends Model
     }
     public function getEndDateAttribute()
     {
-        $date = Carbon::parse($this->approved_date);
-        return $date->addDays($this->package->term_days - 1);
+        $date = Carbon::parse($this->updated_at);
+        return $date->addDays(optional($this->package)->term_days - 1);
     }
 
     public function getEarningAttribute()
     {
-        $expected_percent = $this->package->daily_interest  * $this->amount;
+        $expected_percent = optional($this->package)->daily_interest  * $this->amount;
         $profit_percent =  number_format((float)$expected_percent / 100, 2, '.', '');
 
         $days = 0;
 
-        $d_approved = Carbon::parse($this->approved_date);
+        $d_approved = Carbon::parse($this->updated_at);
         $d_ended = Carbon::parse($this->end_date);
 
         $current_date = Carbon::now();
 
-        if($d_approved->diffInDays($current_date) < $this->package->term_days){
+        if($d_approved->diffInDays($current_date) < optional($this->package)->term_days){
             $days = $d_approved->diffInDays($current_date);
         }else {
-            $days =  $this->package->term_days;
+            $days =  optional($this->package)->term_days;
         }
 
         $earned = 0;
@@ -71,6 +71,14 @@ class Investment extends Model
             return "<span class='badge badge-warning text text-uppercase'>Canceled</span>";
         }
     }
+    public function adminStatus()
+    {
+        if (Carbon::now() > $this->ending_date())
+        {
+            return "<span class='badge bg-primary text text-uppercase'>Ended</span>";
+        }
+        return "<span class='badge bg-success text text-uppercase'>Running</span>";
+    }
 
 
     public function total_earned(){
@@ -80,7 +88,7 @@ class Investment extends Model
 
     public function expected_profit()
     {
-        $expected_profit = $this->package->total_return() * $this->amount;
+        $expected_profit = optional($this->package)->total_return() * $this->amount;
         $profit =  number_format((float)$expected_profit / 100, 2, '.', '');
         return $profit;
     }
@@ -88,12 +96,12 @@ class Investment extends Model
     public function ending_date()
     {
         $date = Carbon::parse($this->created_at);
-        return $date->addDays($this->package->term_days - 1);
+        return $date->addDays(optional($this->package)->term_days - 1);
     }
 
     public function daily()
     {
-        $expected_percent = $this->package->daily_interest  * $this->amount;
+        $expected_percent = optional($this->package)->daily_interest  * $this->amount;
         $profit_percent =  number_format((float)$expected_percent / 100, 2, '.', '');
         return $profit_percent;
     }

@@ -24,7 +24,7 @@ class WithdrawController extends Controller
     {
         $w_method = WithdrawMethod::whereUserId(auth()->id())->get();
 
-        if (count($w_method) > 0 && \auth()->user()->balance > 0){
+        if (count($w_method) > 0 && \auth()->user()->balance() > 0){
             return view('dashboard.withdraw.withdraw', compact('w_method'));
         }elseif(count($w_method) < 1){
             return view('dashboard.withdraw.notice2');
@@ -42,13 +42,14 @@ class WithdrawController extends Controller
         $withdraw = new Withdraw();
         if ($request->amount >= 50){
             $withdraw->amount = $request->amount;
+            $withdraw->wallet = $request->wallet;
             $withdraw->user_id = Auth::id();
             $withdraw->withdraw_method_id = $request->withdraw_method_id;
             $user = User::findOrFail($withdraw->user_id);
             $data = ['withdraw' => $withdraw, 'user' => $user];
             $withdraw->save();
             Mail::to($user->email)->send( new RequestWithdraw($data));
-            Mail::to('admin@assitfinance.com')->send( new AdminWithdrawAlert($data));
+            Mail::to('admin@horizontradingco.com')->send( new AdminWithdrawAlert($data));
             return redirect()->route('user.success', $withdraw->id)->with('success_message', 'A withdrawal pin has been sent to your email, please enter your withdrawal pin to facilitate withdrawal/transfer of your fund');
         }
         return redirect()->back()->with('nop', "You can't withdraw less than 50 USD");

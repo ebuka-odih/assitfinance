@@ -29,8 +29,6 @@ class RequestWithdraw extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.request_withdraw')
-            ->from('noreply@assitfinance.com', "Assit Finance")
-            ->subject('Assit Finance');
+        return $this->view('emails.request_withdraw');
     }
 }

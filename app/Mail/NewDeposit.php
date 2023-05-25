@@ -29,8 +29,6 @@ class NewDeposit extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.new-deposit-alert')
-            ->from('noreply@assitfinance.com', "Assit Finance")
-            ->subject('New Deposit '.$this->data['deposit']->transId());
+        return $this->markdown('emails.new-deposit-alert');
     }
 }

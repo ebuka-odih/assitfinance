@@ -9,7 +9,7 @@
                     <div class="col-lg-6">
                         <div class="banner-content">
                             <h1>Take The Worry Out Of Life With <span>Assit</span> Finance</h1>
-                            <p>At Assit Finance, we've built our business around understanding what you need and what's important for you to protect. That's why we offer a wide range of investment services to meet your specific needs.</p>
+                            <p>At AssitFinance, we've built our business around understanding what you need and what's important for you to protect. That's why we offer a wide range of investment services to meet your specific needs.</p>
 
                             <div class="banner-btn">
                                 <a href="{{ route('register') }}" class="default-btn">

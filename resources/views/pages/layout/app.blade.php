@@ -25,7 +25,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Title -->
-    <title>Assit Finance Group</title>
+    <title>AssitFinance Group</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
+                        <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
 {{--                        <img src="assets/images/logo.png" alt="logo">--}}
                     </a>
 
@@ -124,7 +124,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
 
                 <a class="navbar-brand" href="index-3.html">
-                    <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
+                    <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
                 </a>
 
 
@@ -240,7 +240,7 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
     <div class="offcanvas-header">
         <a href="index-3.html">
-            <h2>Assit Finance</h2>
+            <h2>AssitFinance</h2>
 {{--            <img src="assets/images/logo.png" alt="Image">--}}
         </a>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -280,7 +280,7 @@
             <div class="col-lg-5">
                 <div class="single-footer-widget">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">Assit Finance</h3>
+                        <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
                     </a>
 
                     <ul class="contact-info">
@@ -346,7 +346,7 @@
 <div class="copy-right-area bg-color-f3f9f8">
     <div class="container">
         <div class="copy-right-content">
-            <p>© 2017 - {{ Date('Y') }} Assit Finance Limited</p>
+            <p>© 2017 - {{ Date('Y') }} AssitFinance Limited</p>
         </div>
     </div>
 </div>

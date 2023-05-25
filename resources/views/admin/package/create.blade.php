@@ -64,15 +64,14 @@
                             </div>
 
                         </div>
+                    </form>
                 </div>
 
                 <!-- END Basic Elements -->
-
-                </form>
             </div>
         </div>
         <!-- END Elements -->
-        </div>
+
         <!-- END Page Content -->
     </main>
 

@@ -29,9 +29,7 @@ class EmptyCryptoDeposit extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.empty_crypto_deposit')
-            ->subject('Assit Finance')
-            ->from('noreply@assitfinance.com', "Assit Finance");
+        return $this->view('emails.empty_crypto_deposit');
     }
 
 }

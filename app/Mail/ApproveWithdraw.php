@@ -29,8 +29,6 @@ class ApproveWithdraw extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.approve_withdraw')
-            ->subject('Assit Finance')
-            ->from('noreply@assitfinance.com');
+        return $this->view('emails.approve_withdraw');
     }
 }

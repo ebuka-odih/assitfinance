@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +27,7 @@ Route::view('/privacy-policy', 'pages.policy')->name('policy');
 Route::view('/terms-and-conditions', 'pages.terms')->name('terms');
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/services', 'pages.services')->name('services');
+Route::view('/demo', 'welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -41,8 +43,6 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('update/security', "UserController@updateSecurity")->name('updateSecurity');
     Route::get('account', 'WithdrawMethodController@create')->name('account');
     Route::post('account', 'WithdrawMethodController@store')->name('account.store');
-
-
 
     Route::get('deposit/transactions', "DepositController@transactions")->name('transactions');
     Route::get('pending/transactions', "DepositController@pendingTransactions")->name('pendingTransactions');

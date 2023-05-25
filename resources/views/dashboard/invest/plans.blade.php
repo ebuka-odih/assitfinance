@@ -51,7 +51,7 @@
                                                 <div class="plan-item-desc card-text">
                                                     <ul class="plan-item-desc-list">
                                                         <li><span class="desc-label">Min Deposit</span> - <span class="desc-data">$@convert($item->min_deposit)</span></li>
-                                                        <li><span class="desc-label">Max Deposit</span> - <span class="desc-data">$@convert($item->max_deposit)</span></li>
+                                                        <li><span class="desc-label">Max Deposit</span> - <span class="desc-data">${{ $item->max_deposit() }}</span></li>
                                                         <li><span class="desc-label">Deposit Return</span> - <span class="desc-data">Yes</span></li>
                                                         <li><span class="desc-label">Total Return</span> - <span class="desc-data">{{ $item->total_return() }}%</span></li>
                                                     </ul>
@@ -70,7 +70,7 @@
                             </ul><!-- .plan-list -->
 
 
-                            <div class="buysell-field form-group mt-2">
+                            <div class="buysell-field form-group mt-2 col-lg-6 col-md-6 offset-lg-3 offset-md-3">
                                 <div class="form-label-group">
                                     <label class="form-label text-center" for="buysell-amount">Enter Amount to Invest</label>
                                 </div>
@@ -88,15 +88,41 @@
                                         {{ session()->get('insufficient') }}
                                     </div>
                                 @endif
-                                <div class="form-control-group">
-                                    <input type="text" class="form-control form-control-lg form-control-number" id="buysell-amount" name="amount" placeholder="100">
+                                @if(session()->has('wallet'))
+                                    <div class="alert alert-danger">
+                                        {{ session()->get('wallet') }}
+                                    </div>
+                                @endif
+                                <div class="form-control-group ">
+                                    <label for="">
+                                        <input type="radio" name="balance" value="btc_balance">
+                                        Spend funds from Bitcoin ($@convert(auth()->user()->btc_balance))
+                                    </label>
+                                    <br>
+                                    <label for="">
+                                        <input type="radio" name="balance" value="eth_balance">
+                                        Spend funds from Ethereum ($@convert(auth()->user()->eth_balance))
+                                    </label><br>
+                                    <label for="">
+                                        <input type="radio" name="balance" value="usdt_balance">
+                                        Spend funds from USDT ($@convert(auth()->user()->usdt_balance))
+                                    </label><br>
+                                    <label for="">
+                                        <input type="radio" name="balance" value="doge_balance">
+                                        Spend funds from Doge ($@convert(auth()->user()->doge_balance))
+                                    </label>
+
+                                </div>
+
+                                <div class="form-control-group ">
+                                    <input type="number" class="form-control form-control-lg form-control-number" id="buysell-amount" name="amount" placeholder="100">
                                     <div class="form-dropdown">
                                         <div class="text">USD</div>
                                     </div>
 
                                 </div>
                                 <div class="form-note-group">
-                                    <span class="buysell-min form-note-alt">Account Balance $@convert(auth()->user()->balance)</span>
+                                    <span class="buysell-min form-note-alt">Account Balance $@convert(auth()->user()->balance())</span>
                                 </div>
                             </div>
 

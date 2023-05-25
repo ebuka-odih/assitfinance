@@ -10,7 +10,7 @@
 
                     <ul>
                         <li>
-                            <a href="index-2.html">
+                            <a href="{{ route('index') }}">
                                 Home
                             </a>
                         </li>

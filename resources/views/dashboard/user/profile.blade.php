@@ -18,7 +18,7 @@
                     <a class="nav-link active" href="{{ route('user.profile') }}">Personal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('user.account') }}">Account</a>
+                    <a class="nav-link" href="{{ route('user.account') }}">Payout Account</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.security') }}">Security</a>
@@ -31,7 +31,7 @@
                     <div class="nk-block-head-content">
                         <h5 class="nk-block-title">Personal Information</h5>
                         <div class="nk-block-des">
-                            <p>Basic info, like your name and address, that you use on Aflluent-CoinFX.</p>
+                            <p>Basic info, like your name and address, that you use on {{ env('APP_NAME') }}.</p>
                         </div>
                     </div>
                 </div><!-- .nk-block-head -->
