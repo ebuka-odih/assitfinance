@@ -38,7 +38,7 @@
                                                 <th class="text-center sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="#: activate to sort column descending">Date</th>
                                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">User</th>
                                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">Amount</th>
-                                                {{--                                            <th class="d-none d-sm-table-cell sorting"  tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending">Payment Detail</th>--}}
+                                                 <th class="d-none d-sm-table-cell sorting"  tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending">Wallet</th>
                                                 <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Status</th>
                                                 <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Action</th>
                                             </tr>
@@ -49,7 +49,7 @@
                                                     <td class="fw-semibold"> {{ date('d-M-y', strtotime($item->created_at)) }}</td>
                                                     <td class="fw-semibold">{{ $item->user->fullname() }} (@convert($item->user['balance']))</td>
                                                     <td class="fw-semibold">$ {{ $item->amount }}</td>
-                                                    {{--                                                <td class="d-none d-sm-table-cell"> {{ $item->withdraw_method->acctLabel() }}</td>--}}
+                                                   <td class="d-none d-sm-table-cell"> {{ $item->wallet }}</td>
                                                     <td class="d-none d-sm-table-cell"> {!! $item->adminStatus() !!}</td>
                                                     <td>
                                                         <a href="{{ route('admin.withdrawDetails', $item->id) }}"><i class="fa fa-eye"></i></a>

@@ -315,18 +315,19 @@
                 </div>
 
                 <div class="row justify-content-center">
+                    @foreach($plans as $item)
                     <div class="col-lg-6 col-sm-6">
                         <div class="single-pricing">
                             <div class="price-title">
-                                <h3>Plan 1</h3>
-                                <h2>$100 - $19,999</h2>
-                                <span><b>2% ROI</b> </span>
+                                <h3>{{ $item->name }}</h3>
+                                <h2>${{ $item->min_deposit }} - ${{ $item->max_deposit() }}</h2>
+                                <span><b>{{ $item->daily_interest }}% ROI</b> </span>
                             </div>
 
                             <ul>
                                 <li>
                                     <i class="ri-check-line"></i>
-                                    Duration - 10 Days
+                                    Duration - {{ $item->term_days }} Days
                                 </li>
                                 <li>
                                     <i class="ri-check-line"></i>
@@ -346,101 +347,10 @@
                             <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
                         </div>
                     </div>
+                    @endforeach
 
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="single-pricing">
-                            <div class="price-title">
-                                <h3>Plan 2</h3>
-                                <h2>$20,000 - $Unlimited</h2>
-                                <span><b>3% ROI</b> </span>
-                            </div>
 
-                            <ul>
-                                <li>
-                                    <i class="ri-check-line"></i>
-                                    Duration - 10 Days
-                                </li>
-                                <li>
-                                    <i class="ri-check-line"></i>
 
-                                </li>
-                                <li>
-                                    <i class="ri-check-line"></i>
-                                    10% Referral Bonus
-                                </li>
-
-                                <li>
-                                    <i class="ri-check-line"></i>
-                                    24/7 Support
-                                </li>
-                            </ul>
-
-                            <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
-                        </div>
-                    </div>
-
-                    <!--			<div class="col-lg-3 col-sm-6">
-                                    <div class="single-pricing">
-                                        <div class="price-title">
-                                        <h3>Plan 3</h3>
-                                            <h2>$15,000 - $29,000</h2>
-                                            <span>11.5% ROI </span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                                Duration - 5 Days
-                                            </li>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-
-                                            </li>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                        8% Referral Bonus
-                                            </li>
-
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                                24/7 Support
-                                            </li>
-                                        </ul>
-
-                                        <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-pricing">
-                                        <div class="price-title">
-                                            <h3>Plan 4</h3>
-                                            <h2>$30,000 - $Unlimited</h2>
-                                            <span>30% ROI </span>
-                                        </div>
-
-                                        <ul>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                                Duration - 5 Days
-                                            </li>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-
-                                            </li>
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                        8% Referral Bonus
-                                            </li>
-
-                                            <li>
-                                                <i class="ri-check-line"></i>
-                                                24/7 Support
-                                            </li>
-                                        </ul>
-            <a href="{{ route('register') }}" class="default-btn">Choose Plan	</a>
-
-                                    </div>
-                                </div>  -->
                 </div>
             </div>
         </div>

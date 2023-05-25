@@ -9,7 +9,13 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $plans = Package::paginate(2);
+        $plans = Package::all();
         return view('pages.index', compact('plans'));
+    }
+
+    public function pricing()
+    {
+        $plans = Package::all();
+        return view('pages.pricing', compact('plans'));
     }
 }
