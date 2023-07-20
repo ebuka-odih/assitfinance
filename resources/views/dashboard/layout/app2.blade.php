@@ -195,7 +195,6 @@
 <script src="{{ asset('assets2/js/scripts.js?ver=2.4.0') }}"></script>
 <script src="{{ asset('assets2/js/charts/chart-invest.js?ver=2.4.0') }}"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 
 </html>

@@ -32,7 +32,7 @@
     <div class="subscribe-area ptb-100">
         <div class="container">
             <div class="section-title">
-                <span class="top-title">AssitFinance Group</span>
+                <span class="top-title">AssistFinances Group</span>
                 <h2>
                     We make lives better by solving the financial challenges of our changing world.</h2>
                 <p>We will continue to build on our momentum in this important area of the world…through improved communication of our product quality, brand relevance and commitment to balanced, active lifestyles.</p>

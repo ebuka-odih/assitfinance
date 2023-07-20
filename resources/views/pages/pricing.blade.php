@@ -100,7 +100,7 @@
                                 <img src="assets/images/review/xreview-2.jpg.pagespeed.ic.Q22Pp41wJb.jpg" alt="Image">
                             </div>
 
-                            <p>I had never use another investment company since i started working with AssitFinance and they have exceeded my expectations.</p>
+                            <p>I had never use another investment company since i started working with AssistFinances and they have exceeded my expectations.</p>
 
                             <h3>David Shanaham</h3>
                             <span>Home Owner</span>

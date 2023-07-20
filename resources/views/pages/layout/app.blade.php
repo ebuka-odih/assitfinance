@@ -25,7 +25,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Title -->
-    <title>AssitFinance Group</title>
+    <title>AssistFinances Group</title>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e0056248-2afe-4190-82fc-13590ba94883";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
@@ -39,7 +39,7 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
+                        <h3 style="font-weight: bolder; color: black">AssistFinances</h3>
 {{--                        <img src="assets/images/logo.png" alt="logo">--}}
                     </a>
 
@@ -125,7 +125,7 @@
             <nav class="navbar navbar-expand-md navbar-light">
 
                 <a class="navbar-brand" href="index-3.html">
-                    <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
+                    <h3 style="font-weight: bolder; color: black">AssistFinances</h3>
                 </a>
 
 
@@ -241,7 +241,7 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
     <div class="offcanvas-header">
         <a href="index-3.html">
-            <h2>AssitFinance</h2>
+            <h2>AssistFinances</h2>
 {{--            <img src="assets/images/logo.png" alt="Image">--}}
         </a>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -263,7 +263,7 @@
 
                 <li>
                     <i class="ri-mail-line"></i>
-                    <a href="#">support@assitfinance.com</a>
+                    <a href="#">support@AssistFinances.com</a>
                 </li>
 
             </ul>
@@ -281,7 +281,7 @@
             <div class="col-lg-5">
                 <div class="single-footer-widget">
                     <a href="{{ route('index') }}">
-                        <h3 style="font-weight: bolder; color: black">AssitFinance</h3>
+                        <h3 style="font-weight: bolder; color: black">AssistFinances</h3>
                     </a>
 
                     <ul class="contact-info">
@@ -292,7 +292,7 @@
 
                         <li>
                             <span>Email:</span>
-                            <a href="#">support@assitfinance.com</a>
+                            <a href="#">support@AssistFinances.com</a>
                         </li>
                     </ul>
 
@@ -347,7 +347,7 @@
 <div class="copy-right-area bg-color-f3f9f8">
     <div class="container">
         <div class="copy-right-content">
-            <p>© 2017 - {{ Date('Y') }} AssitFinance Limited</p>
+            <p>© 2017 - {{ Date('Y') }} AssistFinances Limited</p>
         </div>
     </div>
 </div>

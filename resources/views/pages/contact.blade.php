@@ -48,7 +48,7 @@
                     <div class="single-contact-info">
                         <i class="flaticon-email"></i>
                         <h3>our Email</h3>
-                        <a href="#">support@assitfinance.com</a>
+                        <a href="#">support@assistfinances.com</a>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                     <div class="single-contact-info">
                         <i class="flaticon-internet"></i>
                         <h3>Website</h3>
-                        <a href="#">www.assitfinance.com</a>
+                        <a href="#">www.assistfinances.com</a>
                     </div>
                 </div>
             </div>
