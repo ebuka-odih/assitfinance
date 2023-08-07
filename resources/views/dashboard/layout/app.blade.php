@@ -13,7 +13,8 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('client/assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('client/assets/css/theme.css?ver=2.4.0') }}">
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e0056248-2afe-4190-82fc-13590ba94883";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>
 
     <style>
         #google_translate_element {
