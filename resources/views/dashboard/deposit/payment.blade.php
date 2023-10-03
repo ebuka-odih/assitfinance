@@ -58,15 +58,16 @@
                                         </div>
                                         <br>
                                         <hr>
-                                        <div class="form-label-group">
-                                            <label class="form-label text-center">Scan the QRcode below</label>
-                                        </div>
-                                        <div class="dropdown buysell-cc-dropdown">
-                                            <div class="qr-media mx-auto mb-3 w-max-100px">
-                                                {!! QrCode::size(450)->generate($deposit->payment_method->value); !!}
+{{--                                        <div class="form-label-group">--}}
+{{--                                            <label class="form-label text-center">Scan the QRcode below</label>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="dropdown buysell-cc-dropdown">--}}
+{{--                                            <div class="qr-media mx-auto mb-3 w-max-100px">--}}
+{{--                                                {!! QrCode::size(450)->generate($deposit->payment_method->value); !!}--}}
 
-                                            </div>
-                                        </div><!-- .dropdown -->
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+                                        <!-- .dropdown -->
                                     </div><!-- .buysell-field -->
                                     <div class="buysell-field form-action text-center">
                                         <div>
