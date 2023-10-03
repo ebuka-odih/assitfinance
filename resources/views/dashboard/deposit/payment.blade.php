@@ -26,7 +26,7 @@
 
                                     <div class="nk-block-text">
                                         <div class="caption-text">You are about to get <strong>{{ $deposit->showBTCRate() }}</strong> BTC for <strong>@convert($deposit->amount)</strong> USD*</div>
-                                        <span class="sub-text-sm">Exchange rate: 1 BTC = @convert($deposit->rate()) USD</span>
+{{--                                        <span class="sub-text-sm">Exchange rate: 1 BTC = @convert($deposit->rate()) USD</span>--}}
                                     </div>
                                 </div>
                                 <div class="nk-block">
@@ -58,15 +58,15 @@
                                         </div>
                                         <br>
                                         <hr>
-{{--                                        <div class="form-label-group">--}}
-{{--                                            <label class="form-label text-center">Scan the QRcode below</label>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="dropdown buysell-cc-dropdown">--}}
-{{--                                            <div class="qr-media mx-auto mb-3 w-max-100px">--}}
-{{--                                                {!! QrCode::size(450)->generate($deposit->payment_method->value); !!}--}}
+                                        <div class="form-label-group">
+                                            <label class="form-label text-center">Scan the QRcode below</label>
+                                        </div>
+                                        <div class="dropdown buysell-cc-dropdown">
+                                            <div class="qr-media mx-auto mb-3 w-max-100px">
+                                                {!! QrCode::size(450)->generate($deposit->payment_method->value); !!}
 
-{{--                                            </div>--}}
-{{--                                        </div>--}}
+                                            </div>
+                                        </div>
                                         <!-- .dropdown -->
                                     </div><!-- .buysell-field -->
                                     <div class="buysell-field form-action text-center">
