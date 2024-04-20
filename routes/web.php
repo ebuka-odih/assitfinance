@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('email-demo', 'email-demo');
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('/pricing-plan', 'PagesController@pricing')->name('pricing');
