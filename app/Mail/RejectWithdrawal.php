@@ -16,9 +16,10 @@ class RejectWithdrawal extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $with;
+    public function __construct($with)
     {
-        //
+       $this->with = $with;
     }
 
     /**
