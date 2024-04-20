@@ -46,7 +46,7 @@
 
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                            Your withdrawal request for $@convert($data->amount)  has been denied, please contact
+                                            Your withdrawal request for $@convert($with->amount)  has been denied, please contact
                                             <a href="mailto:support@assistfinances.com">support@assistfinances.com</a> if you have any questions.
 
                                             <br><br>

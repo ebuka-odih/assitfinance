@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Mail\ApproveWithdraw;
+use App\Mail\RejectWithdrawal;
 use App\User;
 use App\Withdraw;
 use Illuminate\Http\Request;
@@ -86,6 +87,7 @@ class AdminWithdraw extends Controller
         $with = Withdraw::findOrFail($id);
         $with->status = 2;
         $with->save();
+        Mail::to($with->user->email)->send(new RejectWithdrawal($with));
         return redirect()->back()->with('success', 'Withdrawal Rejected');
     }
 
