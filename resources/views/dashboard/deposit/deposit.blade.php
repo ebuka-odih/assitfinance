@@ -71,6 +71,16 @@
                         <div class="form-note text-base text-center">Note: our transfer fee included, <a href="#">see our fees</a>.</div>
                     </form><!-- .buysell-form -->
                 </div><!-- .buysell-block -->
+
+                <br>
+                <hr>
+                <h4 >How to Make Your Deposit</h4>
+                <video width="380" height="250" controls>
+                    <source src="{{ asset('img/Assitfinance.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('img/Assitfinance.mp4') }}" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
             </div><!-- .buysell -->
         </div>
     </div>

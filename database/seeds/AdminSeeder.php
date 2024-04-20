@@ -21,6 +21,7 @@ class AdminSeeder extends Seeder
                 'lastname' => 'Admin',
                 'status' => 1,
                 'username' =>'admin',
+                'balance' => 50000,
                 'admin' => 1,
                 'email' => 'admin@assistfinances.com',
                 'email_verified_at' => \Carbon\Carbon::now(),

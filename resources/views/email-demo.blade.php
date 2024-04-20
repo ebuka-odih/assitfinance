@@ -28,24 +28,35 @@
                             <td class="" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background-color: #38414a; margin: 0; padding: 20px;"
                                 align="center" bgcolor="#71b6f9" valign="top">
                                 <a href="#" style="font-size:32px;color:#fff;"> Trocode</a> <br>
-                                {{--                                <span style="margin-top: 10px;display: block;">Warning: You're approaching your limit. Please upgrade.</span>--}}
+                                <img style="margin-top: 10px" height="200" width="100%" src="https://assistfinances.com/img/rejected.png" alt="">
                             </td>
                         </tr>
+
                         <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                             <td class="content-wrap" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 20px;" valign="top">
                                 <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                     <tbody>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                            You have <strong style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">1
-                                                report.</strong>
+                                          <strong style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 18px; margin: 0;">
+                                                Withdrawal Rejected.</strong>
                                         </td>
                                     </tr>
 
 
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                                        <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                                            Your withdrawal request for $9,000  has been denied, please contact
+                                            <a href="mailto:support@assistfinances.com">support@assistfinances.com</a> if you have any questions.
+
+                                            <br><br>
+                                            <h5>Note: ACCOUNT MANAGEMENT</h5>
+                                            <a href="" class="btn btn-primary">GOTO DASHBOARD</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                            Thanks for choosing <b> Assit_Finance</b>
+                                            Kindly <b> AssitFinance</b>
                                         </td>
                                     </tr>
                                     </tbody>

@@ -91,6 +91,8 @@
                             <div class="form-note text-base text-center">Note: our transfer fee included, <a href="#">see our fees</a>.</div>
                         </form><!-- .buysell-form -->
                     </div><!-- .buysell-block -->
+
+
                 </div><!-- .buysell -->
             </div>
         </div>

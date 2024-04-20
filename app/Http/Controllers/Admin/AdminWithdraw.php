@@ -81,6 +81,14 @@ class AdminWithdraw extends Controller
 
     }
 
+    public function rejectWithdrawal($id)
+    {
+        $with = Withdraw::findOrFail($id);
+        $with->status = 2;
+        $with->save();
+        return redirect()->back()->with('success', 'Withdrawal Rejected');
+    }
+
     public function delete_withdrawal($id)
     {
         $withdraw = Withdraw::findOrFail($id);
