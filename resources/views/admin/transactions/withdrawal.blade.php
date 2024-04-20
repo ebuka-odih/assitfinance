@@ -56,6 +56,7 @@
                                                         @if($item->status == 0)
                                                             <a href="{{ route('admin.approve_withdrawal', $item->id) }}" class="btn btn-sm btn-success mb-1"><i class="fa fa-check"></i></a>
                                                         @else
+                                                            <a href="{{ route('admin.rejectWithdrawal', $item->id) }}" class="btn btn-sm btn-danger mb-1"><i class="fa fa-times-circle"></i></a>
                                                         @endif
                                                         <form method="POST" action="{!! route('admin.delete_withdrawal', $item->id) !!}" accept-charset="UTF-8">
                                                             <input name="_method" value="DELETE" type="hidden">
