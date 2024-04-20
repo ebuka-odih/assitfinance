@@ -26,7 +26,8 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Title -->
     <title>AssistFinances Group</title>
-    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script></head>
+{{--    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>--}}
+</head>
 
 <body>
 
@@ -130,7 +131,8 @@
 
                 <script type="text/javascript">function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element');}</script>
 
-                <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <div class="others-options ml-30">
 
@@ -346,7 +348,7 @@
 <div class="copy-right-area bg-color-f3f9f8">
     <div class="container">
         <div class="copy-right-content">
-            <p>© 2017 - {{ Date('Y') }} AssistFinances Limited</p>
+            <p>© {{ Date('Y') }} - {{ Date('Y') }} AssistFinances Limited</p>
         </div>
     </div>
 </div>
@@ -360,7 +362,8 @@
 <!-- End Go Top Area -->
 
 <!-- Links of JS File -->
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script><script src="assets/js/jquery.min.js"></script>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{ asset('assets/js/meanmenu.min.js') }}"></script>
 <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
@@ -378,6 +381,8 @@
 <!-- GetButton.io widget -->
 <script type="text/javascript">(function(){var options={whatsapp:"+447404080342",call_to_action:"Message us",button_color:"#FF6550",position:"left",};var proto='index.html',host="getbutton.io",url=proto+'//static.'+host;var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url+'/widget-send-button/js/init.js';s.onload=function(){WhWidgetSendButton.init(host,proto,options);};var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);})();</script>
 <!-- /GetButton.io widget -->
+
+<script src="//code.tidio.co/wn7z3dfbcb7ovugqtjrzgps1adfftbsb.js" async></script>
 
 </body>
 
