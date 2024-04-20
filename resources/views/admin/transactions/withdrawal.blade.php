@@ -55,6 +55,8 @@
                                                         <a href="{{ route('admin.withdrawDetails', $item->id) }}"><i class="fa fa-eye"></i></a>
                                                         @if($item->status == 0)
                                                             <a href="{{ route('admin.approve_withdrawal', $item->id) }}" class="btn btn-sm btn-success mb-1"><i class="fa fa-check"></i></a>
+                                                            <a href="{{ route('admin.rejectWithdrawal', $item->id) }}" class="btn btn-sm btn-danger mb-1"><i class="fa fa-times-circle"></i></a>
+
                                                         @else
                                                             <a href="{{ route('admin.rejectWithdrawal', $item->id) }}" class="btn btn-sm btn-danger mb-1"><i class="fa fa-times-circle"></i></a>
                                                         @endif
