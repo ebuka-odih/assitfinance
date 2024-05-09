@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('client/assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('client/assets/css/theme.css?ver=2.4.0') }}">
 
-{{--    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>--}}
+    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>
 
     <style>
         #google_translate_element {
@@ -45,10 +45,10 @@
 
     </style>
 
-    <script
-        src='//fw-cdn.com/11570749/4222873.js'
-        chat='true'>
-    </script>
+{{--    <script--}}
+{{--        src='//fw-cdn.com/11570749/4222873.js'--}}
+{{--        chat='true'>--}}
+{{--    </script>--}}
 </head>
 
 <body class="nk-body npc-crypto bg-white has-sidebar ">

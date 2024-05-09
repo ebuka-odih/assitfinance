@@ -22,12 +22,12 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Title -->
     <title>AssistFinances Group</title>
-{{--    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>--}}
+    <script src="//code.jivosite.com/widget/VGkPSUYp5k" async></script>
 
-    <script
-        src='//fw-cdn.com/11570749/4222873.js'
-        chat='true'>
-    </script>
+{{--    <script--}}
+{{--        src='//fw-cdn.com/11570749/4222873.js'--}}
+{{--        chat='true'>--}}
+{{--    </script>--}}
 </head>
 
 <body>
