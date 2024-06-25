@@ -27,7 +27,7 @@ class DepositController extends Controller
     public function deposit()
     {
         $payment_m = PaymentMethod::all();
-        return view('dashboard.deposit.deposit', compact('payment_m'));
+        return view('dashboard.deposit.deposit-page', compact('payment_m'));
     }
 
     public function processDeposit(Request $request)

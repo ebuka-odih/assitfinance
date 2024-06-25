@@ -47,7 +47,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
 
     Route::get('deposit/transactions', "DepositController@transactions")->name('transactions');
     Route::get('pending/transactions', "DepositController@pendingTransactions")->name('pendingTransactions');
-    Route::get('deposit', "DepositController@deposit")->name('deposit');
+    Route::get('make/deposit', "DepositController@deposit")->name('deposit');
     Route::post('process/deposit', "DepositController@processDeposit")->name('processDeposit');
     Route::get('deposit/payment/QH5H3Q64{id}2GER', "DepositController@payment")->name('payment');
     Route::post('process/payment/QH5H3Q642GER', "DepositController@processPayment")->name('processPayment');
